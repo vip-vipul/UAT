@@ -1,0 +1,761 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs"
+    Inherits="PrjUpassPl.MasterPage" %>
+
+<%@ Register Src="~/Usercontrol/MIADOC_NEW.ascx" TagName="MIADOC" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>HATHWAY</title>
+    <%-- 
+    <link href="CSS/MenuStyle.css" type="text/css" rel="Stylesheet" />
+    <link href="CSS/MasterPageStyle.css" type="text/css" rel="Stylesheet" />
+    <link id="Link6" href="CSS/Style.css" rel="stylesheet" media="screen" runat="server" />
+    <link href="/App_Themes/SkinFile/Skin.css" rel="stylesheet" type="text/css" />
+    --%>
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="EXPIRES" content="Mon, 22 Jul 2002 11:12:01 GMT">
+    <link href="CSS/stylSVC.css" type="text/css" rel="Stylesheet" />
+    <link href="CSS/stylesheet_moc.css" type="text/css" rel="Stylesheet" />
+    <link href="CSS/main.css" rel="stylesheet" type="text/css" />
+    <script src="../JS/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="../JS/ScrollGrid.js" type="text/javascript"></script>
+    <style type="text/css">
+        
+        .PannelBox
+        {
+            padding: 10px 10px 10px 10px;
+        }
+        .style1
+        {
+        }
+        .style2
+        {
+            height: 139px;
+        }
+        .style62
+        {
+        }
+        .style63
+        {
+            height: 26px;
+            width: 90%;
+        }
+        .style64
+        {
+            height: 19px;
+        }
+        .style66
+        {
+            font-size: 10pt;
+        }
+        .blockContents
+        {
+            background: black;
+        }
+        
+        .back
+        {
+           
+            overflow-x: hidden;
+            overflow-y: auto;
+            -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+       
+        }
+        .img-circle
+        {
+            border-radius: 50%;
+        }
+        .urll
+        {
+            margin-top: 20px;
+            height: 26px;
+            width: 250px;
+            padding: 0px 0px 0;
+            background: Red url(img/gradient.png) repeat-x 0 -1100px;
+            line-height: 135%;
+            border-radius: 0em;
+            margin-left: 100px;
+            text-align: center;
+            -webkit-border-radius: 0em;
+            color: White;
+            font-weight: bold;
+            font-size: 13pt;
+            font-family: Verdana,Arial,sans-serif;
+        }
+        
+        
+        .url2
+        {
+            margin-top: 20px;
+            height: 26px;
+            width: 250px;
+            padding: 0px 0px 0;
+            background: Red url(img/gradient.png) repeat-x 0 -1100px;
+            line-height: 135%;
+            border-radius: 0em;
+            margin-left: -1.0%;
+            text-align: center;
+            -webkit-border-radius: 0em;
+            color: White;
+            font-weight: bold;
+            font-size: 12pt;
+            font-family: Verdana,Arial,sans-serif;
+        }
+        
+        
+        
+        .urhome
+        {
+            margin-top: -20px;
+            width: 250px;
+            padding: 0px 0px 0;
+            background: Red url(img/gradient.png) repeat-x 0;
+            border-radius: 2em;
+            margin-left: 0px;
+            text-align: center;
+            -webkit-border-radius: 0em;
+            color: White;
+            font-weight: bold;
+            font-size: 13pt;
+            font-family: Verdana,Arial,sans-serif;
+        }
+        
+        
+        .urwc
+        {
+            margin-top: 0px;
+            height: 26px;
+            width: 550px;
+            padding: 0px 0px 0;
+            background: Red url(img/gradient.png) repeat-x 0 -1100px;
+            line-height: 135%;
+            border-radius: 1em;
+            margin-left: 0px;
+            text-align: center;
+            -webkit-border-radius: 0em;
+            color: White;
+            font-weight: bold;
+            font-size: 13pt;
+            font-family: Verdana,Arial,sans-serif;
+        }
+        
+        .maindive
+        {
+            background-color: white;
+            height: 100%;
+            margin-top: -21px;
+            overflow: auto;
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        .griddiv
+        {
+            overflow: auto;
+            height : 400px;
+        }
+        a, u
+        {
+            text-decoration: none;
+        }
+        .img-circle
+        {
+            border-radius: 50%;
+        }
+        .style67
+        {
+            height: 23px;
+        }
+
+ 
+ .UserImage
+ {
+ 	height: 85px;
+width: auto;
+position: absolute;
+top: 19%;
+right: 5%;
+min-width: 50%;
+ 	}
+ 	
+ 	
+.ca-menu{
+    padding:0;
+   margin: -20px auto;
+}
+.ca-menu li{
+    width: 100px;
+    height: 100px;
+    border: 0px solid #f6f6f6;
+    overflow: hidden;
+    position: relative;
+    float:left;
+    background: #fff;
+    margin-right: 4px;
+    -webkit-border-radius: 125px;
+    -moz-border-radius: 125px;
+    border-radius: 125px;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+.ca-menu li:last-child{
+    margin-right: 0px;
+}
+.ca-menu li a{
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #333;
+    position: relative;
+
+}
+.ca-icon{
+    font-family: 'WebSymbolsRegular', cursive;
+    font-size: 40px;
+    color: #f6f6f6;;
+    line-height: 60px;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    top: 30px;
+    text-align: center;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+.ca-main{
+   font-size: 24px;
+position: absolute;
+top: -21px;
+height: 80px;
+width: 170px;
+left: -37%;
+opacity: 0.8;
+text-align: center;
+}
+.ca-sub{
+   text-align: center;
+color: #000;
+font-size: 10px;
+position: absolute;
+height: auto;
+width: auto;
+left: 50%;
+margin-left: -41px;
+top: 25px;
+    opacity: 0;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+
+.hoverclass
+{
+	opacity: 0.8;
+	 background: #f7f7f7;
+    border-color: #fff;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    box-shadow: 0 0px 60px -50px #000000;
+}
+
+/*.ca-menu li:hover{
+    background: #f7f7f7;
+    border-color: #fff;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    box-shadow: 0 0px 60px -50px #000000;
+}*/
+.ca-menu li:hover .ca-icon{
+    color: #555;
+    font-size: 60px;
+}
+/*.ca-menu li:hover .ca-main{
+    display: none;
+}
+.ca-menu li:hover .ca-sub{
+    opacity: 0.8;
+}*/
+    </style>
+    <script type="text/javascript">
+        window.onunload = function () { };
+        $.ajaxSetup({ cache: false });
+        function closereviewconfirmPopup() {
+            $find("mpereviewconfirm").hide();
+            return false;
+        }
+
+        $(document).click(function (event) {
+            $find("mpehomeimage").hide();
+        });
+        $(document).keypress(function (e) {
+            $find("mpehomeimage").hide();
+        });
+
+        function closeGenPassPopup() {
+            $find("mpeGenPass").hide();
+            return false;
+        }
+
+        function Closehomeimage() {
+            $find("mpehomeimage").hide();
+            return false;
+        }
+
+        
+        
+    </script>
+    <script language="JavaScript">
+
+
+//        document.onkeypress = function (event) {
+//            event = (event || window.event);
+//            if (event.keyCode == 93 || event.keyCode == 123) {
+//                alert('Function not allowed');
+//                return false;
+//            }
+//        }
+//        document.onmousedown = function (event) {
+//            event = (event || window.event);
+//            if (event.keyCode == 93 || event.keyCode == 123) {
+//                alert('Function not allowed');
+//                return false;
+//            }
+//        }
+
+//        document.onkeydown = function (event) {
+//            event = (event || window.event);
+//            if (event.keyCode == 93 || event.keyCode == 123) {
+//                alert('Function not allowed');
+//                return false;
+//            }
+//        }
+        /////////////////////end///////////////////////
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<%--<body class="back" oncontextmenu="alert('Right click not allowed');return false;">--%>
+<%--<body class="back" onunload="bodyUnload();" onclick="clicked=true;"  id="bodyimg" runat="server" >--%>
+<body class="back"  id="bodyimg" runat="server" >
+    <form id="FrmMaster" class="heightClass" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" EnablePartialRendering="true">
+    </asp:ScriptManager>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#editdiv").hide();
+            $("#ca-sub").hide();
+            $("#<%=imgbtncancelicon.ClientID%>").hide();
+
+            $(".ca-menu li").hover(function () {
+                $("#editdiv").show();
+            }, function () {
+                $("#editdiv").hide();
+            });
+
+            $("#editdiv").hover(function () {
+                $("#editdiv").show();
+            }, function () {
+                $("#editdiv").hide();
+            });
+
+            $("#<%=imgbtnediticon.ClientID%>").click(function () {  //use a class, since your ID gets mangled
+
+                $(".ca-sub").addClass("hoverclass");
+                $(".ca-sub").show();
+                // $("#editdiv").hide();
+                $("#<%=Image2.ClientID%>").hide();
+                $("#<%=imgbtnediticon.ClientID%>").hide();
+                $("#<%=imgbtncancelicon.ClientID%>").show();
+            });
+
+            $("#<%=imgbtncancelicon.ClientID%>").click(function () {
+
+                $(".ca-sub").hide();
+                $("#<%=Image2.ClientID%>").show();
+                $("#<%=imgbtnediticon.ClientID%>").show();
+                $("#<%=imgbtncancelicon.ClientID%>").hide();
+                $(".ca-sub").removeClass("hoverclass");
+            });
+        });
+        function uploadimg() {
+            $("#<%=flpimg.ClientID%>").click();
+        }
+
+        $(function () {
+            $("#<%=flpimg.ClientID%>").change(function () {
+                __doPostBack('<%= lnkimgupload.UniqueID%>', '');
+            });
+        });
+    </script>
+  <p style="height: 3px; font-size: larger; margin-top: -10px; color: white; font-family: Arial, Sans-Serif, halvatica;">
+        <marquee><asp:Label ID="Label2" runat="server" Text="hhhkkjkjk"></asp:Label>&nbsp;&nbsp;|&nbsp;&nbsp;<asp:Label ID="lblmsg" runat="server"></asp:Label></marquee>
+    </p>
+  
+ <table style="width: 100%;" valign="top">
+
+    <tr>
+    <td style="text-align:right;color:White; padding-right:3%;margin-top: -10px;" valign="top">
+      &nbsp;<%--<asp:Image ID="imglogo" runat="server" style="display:block;" width="200px" Height="70px"  />--%>
+                                    </td>
+                                    </tr>
+                                    </table>
+    <cent
+    <div class="UserImage">
+    
+    <div>
+    <table style="width: 100%;
+margin-top: -4px;">
+    <tr>
+    <td style="text-align:right;color:White;">
+      &nbsp;<asp:Label ID="lbWelcome" runat="server" Text="Welcome " Style="font-weight: 700"
+                                    Font-Size="11pt" Font-Names="Tahoma"></asp:Label>
+                                <asp:Label ID="LblLoggedInUser" runat="server" Font-Size="10pt" Style="font-weight: 700"
+                                    Font-Names="Tahoma"></asp:Label>
+                                (<asp:Label ID="LblLoggedInUserName" runat="server" Font-Size="10pt" Style="font-weight: 700"
+                                    Font-Names="Tahoma"></asp:Label>) 
+    </td>
+    <td rowspan="3" style="width: 85px;">
+    <ul class="ca-menu">
+                    <li>
+                            <div class="ca-content">
+                                <h2 class="ca-main">
+                                <asp:Image ID="Image2" runat="server"  style="border-width: 0px;
+width: 100px;
+height: 100px;
+display: inline;
+border-radius: 50px;
+margin: 1px 0px 0px 4px;"/></h2>
+                                <h3 class="ca-sub"><a href="javascript:void(0);" id="changeimg" onclick="uploadimg();">Change Image</a><br />
+                                <asp:LinkButton ID="lnkremoveimg" runat="server" OnClick="lnkremoveimg_Click">Remove Image</asp:LinkButton>
+                                </h3>
+                                <asp:FileUpload ID="flpimg" runat="server" style="display:none"/>
+                                <asp:LinkButton ID="lnkimgupload" runat="server" OnClick="lnkimgupload_Click"></asp:LinkButton>
+
+                                <div style=" position: absolute;" id="editdiv">
+    
+                     <asp:ImageButton runat="server" 
+                      style="border-width: 0px; height: 19px; position: relative; top: 77px;left:39px;" 
+                         ID="imgbtnediticon" ImageUrl="~/IconImage/editicon.png"   ToolTip="EDIT" OnClientClick="return false;" 
+                          />
+
+                          
+                        </div>
+     <asp:ImageButton runat="server" 
+                      style="border-width: 0px; height: 19px; position: relative; top: 77px;left:39px;" 
+                         ID="imgbtncancelicon" ImageUrl="~/Images/closebtn.png"   ToolTip="CANCEL" OnClientClick="return false;" 
+                          />
+                            </div>               
+                    </li>
+                   </ul>
+     <%--<asp:Image ID="Image2" runat="server" ImageUrl="~/Images/pawan.jpg" style="border-width: 0px;height: 85px;width: 85px;border-radius: 50px;float: right;"/>--%>
+
+        
+
+    </td>
+    </tr>
+    <tr>
+    <td style="text-align:right;color:White">
+    <asp:Label ID="Label3" runat="server" Text="Actual Balance : " Font-Size="10pt" Style="font-weight: 700"
+                                    Font-Names="Tahoma"></asp:Label>
+           <asp:Label ID="lblBalance" runat="server" Font-Size="10pt" Font-Names="Tahoma"></asp:Label>
+           <asp:Label ID="Label4" runat="server" Text=" / Inventory Balance : " Font-Size="10pt" Style="font-weight: 700"
+                                    Font-Names="Tahoma"></asp:Label>
+           <asp:Label ID="lblInvBalance" runat="server" Font-Size="10pt" Font-Names="Tahoma"></asp:Label>
+           <br />
+     <asp:Label ID="Label1" runat="server" Text="Last Login : " Font-Size="10pt" Style="font-weight: 700"
+                                    Font-Names="Tahoma"></asp:Label>
+           <asp:Label ID="lblLastLogin" runat="server" Font-Size="10pt" Font-Names="Tahoma"></asp:Label>
+    </td>
+    <td>
+    
+    </td>
+    </tr>
+    <tr>
+    <td style="text-align:right;color:White;">
+    
+                               
+                                    <asp:LinkButton ID="lbChangePass" runat="server" Text="Change Password" ForeColor="White"
+                                    Font-Size="10pt" Font-Names="Tahoma" OnClick="lbChangePass_Click"></asp:LinkButton>
+                                &nbsp;
+                                |&nbsp;
+                                 <asp:LinkButton ID="lnkLogOut" runat="server" Text="Signout" Font-Size="10pt" Font-Names="Tahoma"
+                                    ForeColor="White" OnClick="lnkLogOut_Click"></asp:LinkButton>
+    </td>
+    <td>
+    
+    </td>
+    </tr>
+    </table>
+
+       </div>
+    </div>
+    <center>
+        <!-- COPASS CODE BEGIN -->
+        <table class="style1">
+            <%--<tr>
+                <td colspan="2">
+                    <table cellspacing="0" class="style1">
+                        <tr>
+                            <td class="style2" colspan="2">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+            </tr>--%>
+            <tr>
+                <td>
+                    <table class="style1" cellspacing="0" style="border-style: none; border-width: 0px;">
+                        <tr>
+                            <td valign="top" align="left" style="border-right-style: none; border-right-width: 1px;">
+                                <a href="../Transaction/Home.aspx">
+                                    <ul id="Uhome" runat="server" class="urhome">
+                                        HOME</ul>
+                                </a>
+                            </td>
+                            <td style="background-color: transparent; color: #FFFFFF;" align="left" class="style63"
+                                valign="middle">
+                                <%-- <asp:Label ID="lblUserLevel" runat="server" Text="" Font-Bold="true" Font-Size="10pt" />&nbsp;&nbsp;&nbsp; --%>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" colspan="2">
+                                <table style="margin-top: -40px">
+                                    <tr id="pagehead" runat="server">
+                                        <td>
+                                            <ul id="tdurl" class="urll" runat="server">
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul id="Ul2" class="url2" runat="server">
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="td1" colspan="2" style="border-right-style: none; border-right-width: 1px;">
+                                            <div style="width: 1200px;">
+                                                <center>
+                                                    <asp:ContentPlaceHolder ID="MasterBody" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                </center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <%-- ------------------------------Generic PASSWORD Change-------------------------------- --%>
+                                            <cc1:ModalPopupExtender ID="popGenPass" runat="server" BehaviorID="mpeGenPass" TargetControlID="hdnGenPop2"
+                                                PopupControlID="pnlGenPassword">
+                                            </cc1:ModalPopupExtender>
+                                            <asp:HiddenField ID="hdnGenPop2" runat="server" />
+                                            <asp:Panel ID="pnlGenPassword" runat="server" CssClass="Popup" Style="width: 430px;
+                                                height: 240px; display: none;">
+                                                <%-- display: none; --%>
+                                                <center>
+                                                    <br />
+                                                    <table width="100%">
+                                                        <tr>
+                                                            <td align="left" style="color: #094791; font-weight: bold;">
+                                                                &nbsp;&nbsp;&nbsp;Change Password
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <hr />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table width="300px">
+                                                        <tr>
+                                                            <td align="left" width="160px">
+                                                                <asp:Label ID="Label104" runat="server" Text="Current Password "></asp:Label>
+                                                                <asp:Label ID="Label107" runat="server" ForeColor="Red" Text="*"></asp:Label>
+                                                            </td>
+                                                            <td>
+                                                                <asp:Label ID="Label105" runat="server" Text=" : "></asp:Label>
+                                                            </td>
+                                                            <td align="left">
+                                                                <asp:TextBox ID="txtGenCurPass" runat="server" Text="" Width="110px" TextMode="Password"></asp:TextBox>
+                                                                <asp:RequiredFieldValidator ID="RequiredFieldValidatorGenPass3" runat="server" ValidationGroup="ValidGenPass"
+                                                                    ControlToValidate="txtGenCurPass" Display="None" ErrorMessage="Current Password cannot be blank"></asp:RequiredFieldValidator>
+                                                                <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender3" runat="server" TargetControlID="txtGenCurPass"
+                                                                    FilterType="UppercaseLetters, LowercaseLetters, Numbers">
+                                                                </cc1:FilteredTextBoxExtender>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" width="160px">
+                                                                <asp:Label ID="Label106" runat="server" Text="Password "></asp:Label>
+                                                                <asp:Label ID="Label108" runat="server" ForeColor="Red" Text="*"></asp:Label>
+                                                            </td>
+                                                            <td>
+                                                                <asp:Label ID="Label7" runat="server" Text=" : "></asp:Label>
+                                                            </td>
+                                                            <td align="left">
+                                                                <asp:TextBox ID="txtGenNewPass" runat="server" Text="" MaxLength="12" Width="110px"
+                                                                    TextMode="Password"></asp:TextBox>
+                                                                <asp:RequiredFieldValidator ID="RequiredFieldValidatorGenPass2" runat="server" ValidationGroup="ValidGenPass"
+                                                                    ControlToValidate="txtGenNewPass" Display="None" ErrorMessage="Password cannot be blank"></asp:RequiredFieldValidator>
+                                                                <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="txtGenNewPass"
+                                                                    FilterType="UppercaseLetters, LowercaseLetters, Numbers">
+                                                                </cc1:FilteredTextBoxExtender>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" width="160px">
+                                                                <asp:Label ID="Label8" runat="server" Text="Confirm Password "></asp:Label>
+                                                                <asp:Label ID="Label109" runat="server" ForeColor="Red" Text="*"></asp:Label>
+                                                            </td>
+                                                            <td>
+                                                                <asp:Label ID="Label9" runat="server" Text=" : "></asp:Label>
+                                                            </td>
+                                                            <td align="left">
+                                                                <asp:TextBox ID="txtGenConPass" runat="server" MaxLength="12" Text="" Width="110px"
+                                                                    TextMode="Password"></asp:TextBox>
+                                                                <asp:RequiredFieldValidator ID="RequiredFieldValidatorGenPass1" runat="server" ValidationGroup="ValidGenPass"
+                                                                    ControlToValidate="txtGenConPass" Display="None" ErrorMessage="Confirmation cannnot be blank"></asp:RequiredFieldValidator>
+                                                                <asp:CompareValidator ID="CompareValidatorGenPass1" runat="server" ValidationGroup="ValidGenPass"
+                                                                    ControlToValidate="txtGenConPass" ControlToCompare="txtGenNewPass" Display="None"
+                                                                    ErrorMessage="Confirmation does not match with Password"></asp:CompareValidator>
+                                                                <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" TargetControlID="txtGenConPass"
+                                                                    FilterType="UppercaseLetters, LowercaseLetters, Numbers">
+                                                                </cc1:FilteredTextBoxExtender>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" colspan="3">
+                                                                <asp:Label ID="lblGenPassResponse" runat="server" ForeColor="Red" Text=""></asp:Label>
+                                                                <asp:ValidationSummary ID="ValidationSummaryGenPass" ShowMessageBox="true" ValidationGroup="ValidGenPass"
+                                                                    DisplayMode="BulletList" ShowSummary="false" runat="server" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" colspan="3">
+                                                                <asp:Button ID="btnGenChangePass" runat="server" CssClass="button" ValidationGroup="ValidGenPass"
+                                                                    Text="Change" Width="100px" OnClick="btnGenChangePass_Click" />
+                                                                &nbsp;
+                                                                <input id="btnOKGenPass" runat="server" type="button" value="Cancel" class="button"
+                                                                    style="width: 100px;" onclick="closeGenPassPopup();" />
+                                                                &nbsp;
+                                                                <asp:Button ID="btnGenPassOk" runat="server" CssClass="button" Text="OK" Width="100px"
+                                                                    OnClick="btnGenPassOk_Click" Visible="false" Font-Size="11pt" Font-Names="Tahoma"
+                                                                    ForeColor="White" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </center>
+                                            </asp:Panel>
+                                            <cc1:ModalPopupExtender ID="pophomeimage" runat="server" BehaviorID="mpehomeimage"
+                                                TargetControlID="hdnhomeimage" PopupControlID="pnlhomemage">
+                                            </cc1:ModalPopupExtender>
+                                            <asp:HiddenField ID="hdnhomeimage" runat="server" />
+                                            <asp:Panel ID="pnlhomemage" runat="server" CssClass="Popup" Style="width: auto; height: auto;
+                                                display: none; top: 10px !important;">
+                                                <asp:Image ID="Image17" ToolTip="Close" runat="server" Style="z-index: -1; float: right;
+                                                    margin-top: -34px; margin-right: -34px;" onclick="Closehomeimage();" ImageUrl="~/Images/closebtn.png" />
+                                                <center>
+                                                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/homeimage.jpg" Style="height: 600px;
+                                                        width: auto;" />
+                                                </center>
+                                            </asp:Panel>
+                                            <asp:Button ID="dummy" runat="server" Text="" Style="display: none;" />
+                                            <cc1:ModalPopupExtender ID="PopMiaTerms" runat="server" BehaviorID="mpeMiaTerms"
+                                                TargetControlID="dummy" PopupControlID="pnlMiaTerms">
+                                            </cc1:ModalPopupExtender>
+                                            <asp:Panel ID="pnlMiaTerms" runat="server" CssClass="Popup" Style="width: 60%; display: none;
+                                                height: 95%">
+                                                <table style="width: 100%; height: 100%;">
+                                                    <tr>
+                                                        <td>
+                                                            <asp:Panel ID="Panel1" runat="server" Style="width: 99%; height: 500px; overflow: auto;
+                                                                margin-left: 1%;">
+                                                                <uc1:MIADOC ID="MIADOC1" runat="server" />
+                                                            </asp:Panel>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="left">
+                                                            <hr />
+                                                            <asp:CheckBox ID="chkterm" runat="server" Checked="true" />I accept above Terms
+                                                            and Conditions.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="height: 15%;">
+                                                            <hr />
+                                                            <asp:Button ID="BtnAcceptMiaterms" runat="server" CssClass="button" Text="Proceed"
+                                                                Width="100px" OnClick="BtnAcceptMiaterms_Click" OnClientClick="validate()" />
+                                                            <asp:Button ID="BtnRejectMiaterms" runat="server" CssClass="button" Text="Cancel"
+                                                                Width="100px" OnClick="BtnRejectMiaterms_Click" />
+                                                            <br />
+                                                            <asp:Label ID="lblmiatermserror" runat="server" Text="" ForeColor="Red"></asp:Label>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </asp:Panel>
+                                            <asp:Button ID="btndummyreviewconfirm" runat="server" Text="" Style="display: none;" />
+                                            <cc1:ModalPopupExtender ID="popreviewconfirm" runat="server" BehaviorID="mpereviewconfirm"
+                                                TargetControlID="btndummyreviewconfirm" PopupControlID="pnlreviewconfirm">
+                                            </cc1:ModalPopupExtender>
+                                            <asp:Panel ID="pnlreviewconfirm" runat="server" CssClass="Popup" Style="width: 430px;
+                                                display: none; height: 160px;">
+                                                <asp:Image ID="Image3" ToolTip="Close" runat="server" Style="z-index: -1; float: right;
+                                                    margin-top: -15px; margin-right: -15px;" ImageUrl="~/Images/closebtn.png" onclick="closereviewconfirmPopup();" />
+                                                <table style="width: 90%; height: 100%;">
+                                                    <tr>
+                                                        <td align="center">
+                                                            Thank you for electronically signing up the MIA agreement. Please go to <a href="../Reports/rptHwaylcolegelDet.aspx">
+                                                                Legal</a> section to view the soft copy of the agreement
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center">
+                                                            <input id="Button4" class="button" runat="server" type="button" value="Close" style="width: 100px;"
+                                                                onclick="closereviewconfirmPopup();" />
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </asp:Panel>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                </td>
+            </tr>
+        </table>
+    </center>
+    </form>
+   <%-- <div class="promotion">
+        <img src="../Images/bannerlogin.jpg" style="height: 100%; width: 100%" />
+    </div>--%>
+</body>
+</html>

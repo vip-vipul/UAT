@@ -1,0 +1,9 @@
+E:\Kiran\UPASS Inventory\PrjUpass\PrjUpassPl\bin\PrjUpassPl.dll
+E:\Kiran\UPASS Inventory\PrjUpass\PrjUpassPl\bin\PrjUpassPl.pdb
+E:\Kiran\UPASS Inventory\PrjUpass\PrjUpassPl\bin\PrjUpassBLL.dll
+E:\Kiran\UPASS Inventory\PrjUpass\PrjUpassPl\bin\PrjUpassDAL.dll
+E:\Kiran\UPASS Inventory\PrjUpass\PrjUpassPl\bin\PrjUpassDAL.pdb
+E:\Kiran\UPASS Inventory\PrjUpass\PrjUpassPl\bin\PrjUpassBLL.pdb
+E:\Kiran\UPASS Inventory\PrjUpass\PrjUpassPl\obj\Release\ResolveAssemblyReference.cache
+E:\Kiran\UPASS Inventory\PrjUpass\PrjUpassPl\obj\Release\PrjUpassPl.dll
+E:\Kiran\UPASS Inventory\PrjUpass\PrjUpassPl\obj\Release\PrjUpassPl.pdb

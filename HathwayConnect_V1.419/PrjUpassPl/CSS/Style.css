@@ -1,0 +1,150 @@
+﻿.mGrid
+{
+	width: 100%;
+	background-color: #fff;
+	margin: 5px 0 10px 0;
+	border: solid 1px #525252;
+	border-collapse: collapse;
+}
+.mGrid td
+{
+	padding: 2px;
+	border: solid 1px #c1c1c1;
+	color: black;
+	font-size: 14px;
+	font-family: Sans-Serif;
+}
+.mGrid td a:visited
+{
+	color: black;
+	text-decoration: none;
+}
+.mGrid th
+{
+	padding: 4px 2px;
+	color: #fff;
+	font-family: Sans-Serif;
+	font-size: 14px;
+	background: #424242 url(../Images/grd_head.png) repeat-x top;
+	border-left: solid 1px #525252;
+	font-size: 0.9em;
+	white-space: nowrap;
+}
+.mGrid .alt
+{
+	background: #fcfcfc url(../Images/grd_alt.png) repeat-x top;
+}
+.mGrid .pgr
+{
+	background: #FFFFFF repeat-x top;
+}
+.mGrid .pgr table
+{
+	margin: 5px 0;
+}
+.mGrid .pgr td
+{
+	border-width: 0;
+	padding: 0 6px;
+	border: solid 1px #666;
+	font-weight: bold;
+	color: #fff;
+	line-height: 15px;
+	width: 15px;
+	text-align: center;
+}
+.mGrid .pgr a
+{
+	color: blue;
+	text-decoration: none;
+}
+.mGrid .pgr a:hover
+{
+	color: blue;
+	text-decoration: none;
+}
+
+
+
+
+.mGridfilter
+{
+	width: 100%;
+	background-color: #fff;
+	margin: 5px 0 10px 0;
+	border: solid 1px #525252;
+	border-collapse: collapse;
+}
+.mGridfilter td
+{
+	padding: 1px;
+	border: solid 1px #c1c1c1;
+	color: #717171;
+}
+.mGridfilter th
+{
+	vertical-align: text-top;
+	padding: 8px 1px;
+	color: #fff;
+	background: url(../Images/grd_head_new.png) repeat-x top;
+	border-left: solid 1px #525252;
+	font-size: 0.9em;
+}
+.mGridfilter .alt
+{
+	background: #fcfcfc url(../Images/grd_alt.png) repeat-x top;
+}
+.mGridfilter .pgr
+{
+	background: #424242 url(../Images/grd_pgr.png) repeat-x top;
+}
+.mGridfilter .pgr table
+{
+	margin: 5px 0;
+}
+.mGridfilter .pgr td
+{
+	border-width: 0;
+	padding: 0 4px;
+	border-left: solid 1px #666;
+	font-weight: bold;
+	color: #fff;
+	line-height: 12px;
+}
+.mGridfilter .pgr a
+{
+	color: #666;
+	text-decoration: none;
+}
+.mGridfilter .pgr a:hover
+{
+	color: #000;
+	text-decoration: none;
+}
+
+.GridGroupStyle
+{
+	vertical-align: top;
+	text-align: center;
+}
+
+.PageHeading
+{
+	text-align: left !important;
+	font-family: Sans-Serif;	
+	font-size: 25px;
+	text-shadow: 3px 3px 1.25px #A1A1A1;
+}
+
+hr
+{
+	width:100%;	
+}
+
+.graph_head
+{
+	background: #808080;
+	color: #FFF;
+	border-radius: 50px;	
+	font-weight: bold;
+}

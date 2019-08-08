@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FBAE1E5-394F-427C-BC3B-1BCFF51D1018}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrjUpassDAL</RootNamespace>
+    <AssemblyName>PrjUpassDAL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\..\ASBS\ASBS\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentication\Cls_Data_Auth.cs" />
+    <Compile Include="Authentication\Cls_Data_forgotpass.cs" />
+    <Compile Include="Master\Cls_Data_Dashboard.cs" />
+    <Compile Include="Master\Cls_Data_ecafstbtransfer.cs" />
+    <Compile Include="Master\cls_data_messenger.cs" />
+    <Compile Include="Master\Cls_Data_mstComplaintRegistration.cs" />
+    <Compile Include="Master\Cls_Data_mstCrf.cs" />
+    <Compile Include="Reports\Cls_Data_lcoSharedef.cs" />
+    <Compile Include="Reports\Cls_Data_RptAddPlan_JV.cs" />
+    <Compile Include="Reports\Cls_Data_RptBulkActTransProces.cs" />
+    <Compile Include="Reports\Cls_Data_rptBulkActUpload.cs" />
+    <Compile Include="Reports\Cls_Data_rptChildTVDiscount.cs" />
+    <Compile Include="Reports\Cls_Data_rptcustcandetails.cs" />
+    <Compile Include="Reports\Cls_Data_rptExpiry_new.cs" />
+    <Compile Include="Reports\Cls_Data_RptINVLedger.cs" />
+    <Compile Include="Reports\Cls_Data_rptInvUnusedSTBVC.cs" />
+    <Compile Include="Reports\Cls_Data_rptNewActivation.cs" />
+    <Compile Include="Reports\Cls_Data_rptpartyledopenbal.cs" />
+    <Compile Include="Reports\Cls_Data_rptSelfcareDebitReport.cs" />
+    <Compile Include="Reports\cls_data_RptSelfCareDetails.cs" />
+    <Compile Include="Reports\Helper\Cls_Security.cs" />
+    <Compile Include="Reports\Helper\Cls_Helper.cs" />
+    <Compile Include="Reports\Helper\Cls_Validate.cs" />
+    <Compile Include="Reports\Helper\Cls_Validation.cs" />
+    <Compile Include="Master\Cls_Data_MstHwaymsgBrodcaster.cs" />
+    <Compile Include="Master\Cls_Data_MstLcoAutoEcsConfiguration.cs" />
+    <Compile Include="Master\Cls_Data_MstLcoOtherDetails.cs" />
+    <Compile Include="Master\Cls_Data_MstLCOPreMSOUDefine.cs" />
+    <Compile Include="Master\Cls_Data_MstLCOPreUDefine.cs" />
+    <Compile Include="Master\Cls_Data_MstLCORegistration.cs" />
+    <Compile Include="Master\Cls_Data_MstLCOUpdateDetails.cs" />
+    <Compile Include="Master\Cls_Data_RptBulkTransProces.cs" />
+    <Compile Include="Master\Cls_Data_RptDiscount.cs" />
+    <Compile Include="Transaction\Cls_BLL_FrmDiscount.cs" />
+    <Compile Include="Transaction\Cls_Data_Bulk_ActDct.cs" />
+    <Compile Include="Transaction\Cls_Data_Faulty_Swap.cs" />
+    <Compile Include="Transaction\Cls_Data_FrmDiscount.cs" />
+    <Compile Include="Transaction\Cls_Data_NewSTB.cs" />
+    <Compile Include="Transaction\cls_data_rcptpis.cs" />
+    <Compile Include="Transaction\cls_data_rptleafletDetails.cs" />
+    <Compile Include="Transaction\Cls_Data_STBInventory_Conformation.cs" />
+    <Compile Include="Transaction\Cls_Data_TransBulk_AutoRenewal.cs" />
+    <Compile Include="Transaction\Cls_Data_TransBulk_Discount.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\Cls_Data_DownloadAgreement.cs" />
+    <Compile Include="Reports\cls_Data_lcoprecolldetails.cs" />
+    <Compile Include="Reports\Cls_Data_RptAddPlan.cs" />
+    <Compile Include="Reports\Cls_Data_RptAwailBal.cs" />
+    <Compile Include="Reports\Cls_Data_rptBulkUpload.cs" />
+    <Compile Include="Reports\cls_data_RptCustEcsDetails.cs" />
+    <Compile Include="Reports\Cls_Data_rptExpired.cs" />
+    <Compile Include="Reports\Cls_Data_rptExpiry.cs" />
+    <Compile Include="Reports\Cls_Data_RptLastFive.cs" />
+    <Compile Include="Reports\Cls_Data_RptLastFiveGridBind.cs" />
+    <Compile Include="Reports\Cls_Data_RptLastTrans.cs" />
+    <Compile Include="Reports\Cls_Data_RptLcoAll.cs" />
+    <Compile Include="Reports\Cls_Data_RptLCOPayRev.cs" />
+    <Compile Include="Reports\Cls_Data_RptLedger.cs" />
+    <Compile Include="Reports\Cls_Data_rptPlanDetails.cs" />
+    <Compile Include="Reports\Cls_data_rptserviceActDact.cs" />
+    <Compile Include="Reports\Cls_Data_rptSMSDelivery.cs" />
+    <Compile Include="Reports\Cls_Data_RptTopup.cs" />
+    <Compile Include="Reports\cls_data_rptUserdetailsLcowise.cs" />
+    <Compile Include="Reports\cls_data_rptUserdetailsMSOwise.cs" />
+    <Compile Include="Transaction\Cls_Data_AutoRenewCancel.cs" />
+    <Compile Include="Transaction\Cls_Data_TransHome.cs" />
+    <Compile Include="Transaction\Cls_Data_TransHwayBulkOperation.cs" />
+    <Compile Include="Transaction\Cls_data_TransHwayBulkRenewal.cs" />
+    <Compile Include="Transaction\Cls_Data_TransHwayGlobalAutoRenew.cs" />
+    <Compile Include="Transaction\Cls_Data_TransHwayLcoPayment.cs" />
+    <Compile Include="Transaction\Cls_Data_TransHwayLcoReprintReceipt.cs" />
+    <Compile Include="Transaction\Cls_Data_TransHwayUserCreditLimit.cs" />
+    <Compile Include="Transaction\Cls_Data_TransInvAmountMove.cs" />
+    <Compile Include="Transaction\Cls_Data_TransOsdBmailNotification.cs" />
+    <Compile Include="Transaction\Cls_Data_TxnAssignPlan.cs" />
+    <Compile Include="Transaction\Cls_Data_TransHwayBulkChangePlan.cs" />
+    <Compile Include="Transaction\Cls_Data_UserAccountMap.cs" />
+    <Compile Include="Transaction\Cls_Data_Warehouse.cs" />
+    <Compile Include="Transaction\Cls_DLL_Bulk_Cust_Ecaf.cs" />
+    <Compile Include="Transaction\Cls_Selfcare.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

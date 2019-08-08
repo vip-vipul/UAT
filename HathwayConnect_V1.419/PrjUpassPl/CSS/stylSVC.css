@@ -1,0 +1,300 @@
+tr.reports0 
+{
+	background-color:DarkKhaki;
+	color:White; 
+}
+tr.reports1 
+{
+	background-color:White;
+}
+tr.reports2 
+{
+	background-color:#f8f9e6;
+	color:DimGray;
+}
+tr.reports3
+{
+	background-color:white;
+	color:DimGray;
+}
+fontcolor
+{
+	background-color:white;
+	color:red;
+}
+td
+{
+	font-family:Verdana;
+	font-size:small;
+	font-weight:normal;
+}
+.a1
+{
+	text-decoration:none; 
+	color:white;
+	cursor:hand;
+}
+.a2
+{ 
+	text-decoration:underline;
+	color:Gold; 
+	cursor:hand;
+}
+.l1
+{
+	text-decoration:none; 
+	color:navy;
+	cursor:hand;
+}
+.l2
+{
+	text-decoration:underline;
+	font-weight:bold;
+	color:Teal; 
+	cursor:hand;
+}
+table.list
+{
+	font-family:Verdana;
+	font-size:small;
+	color:DarkCyan;
+}
+TABLE .app
+{
+	font-family:Verdana;
+	font-size:small;
+	background-color:#f8f9e6;
+	border:solid 1 white;	
+}
+Table.update1
+{
+	border-right: 0px;
+	border-top: 0px;
+	font-size: small;
+	left: 20px;
+	border-width:0px;
+	font-family: Verdana;
+	position: absolute;
+	top: 40px;
+}
+
+Table.update1 Tr
+{
+	background-color:#f0f0f0;
+}
+Table.update1 Td
+{
+	height:25;
+	vertical-align:middle;
+}
+Table.update1 Input.nInput
+{
+	border-style:none;
+}
+Table.update1 input
+{
+	font-family:Verdana;
+	font-size:small;
+	border-style:solid;
+	border-width:1;
+	border-color:Gray;
+}
+Table.update1 select
+{
+	font-family:Verdana;
+	font-size:small;
+	border-style:solid;
+	border-width:1;
+}
+Table.details1
+{
+	border-right: 0px;
+	border-top: 0px;
+	font-size: x-large;
+	border-width:0px;
+	font-family: Verdana;
+}
+Table.details1 input
+{
+	font-family:Verdana;
+	font-size:small;
+	border-style:solid;
+	border-width:1;
+	border-color:ivory;
+}
+Table.details1 td
+{
+	background-color:ivory;
+	border-color:darkkhaki;
+	border-width:1;
+	border-style:solid;
+}
+table.dList
+{
+	font-family:Verdana;
+	font-size:x-small;
+	width:100%;
+	background-color:#94ef94;
+	border-width:0;
+}
+table.dList td
+{
+	background-color:#ceffce;
+}
+table.dList td.srno
+{
+	background-color:white;
+}
+.linkControl
+{
+	cursor:hand;
+}
+.fCombo
+{
+	border-style:solid;
+	border-width:1;
+	border-color:Black;	
+}
+.pageHeader1
+{
+	width:100%;
+	height:20;
+	background-color:Black;
+	color:White;
+	font-family:Verdana;
+	font-size:small;
+	font-weight:600;
+	text-align:center;
+	border:solid 1 Navy;
+	
+}
+.menuBtn1
+{
+	font-family:Verdana;
+	font-size:small;
+	font-weight:600;
+	color:white;
+	background-color:Crimson;
+	border-style:solid;
+	border-width:1;
+	border-color:white;
+	height:18px;
+	width:100px;
+	cursor:hand;
+}
+.cmdBtn1
+{
+	font-family:Verdana;
+	font-size:small;
+	font-weight:bold;
+	color:Navy;
+	background-color:#E0E0E0;
+	border-style:solid;
+	border-width:1;
+	border-color:Silver;
+	height:18px;
+	width:60px;
+	cursor:hand;
+}
+.dGrid1
+{
+	width:100%;
+	border-style:solid;
+	border-color:White;
+	border-width:1;
+	background-color:White;
+	font-family:Verdana;
+	font-size:small;
+	 
+}
+.hStyle1
+{
+	font-weight: bold;
+	color: white;
+	background-color: navy;
+	text-align: center;
+}
+.hStyle2
+{
+	font-weight: bold;
+	color: white;
+	background-color: #393939;
+	text-align: center;
+}
+.iStyle1
+{
+	font-weight: normal;
+	background-color:#FD7D03;
+	text-align: center;
+	font-size:small; 
+}
+.iStyle2
+{	
+	font-weight: normal;
+	background-color:#f8f9e6;
+	text-align: center;
+}
+.pStyle1
+{
+	background-color:White;
+	font-weight: 600;
+	color: Navy;
+	text-align: center;
+}
+.pStyle2
+{
+	font-weight: bold;
+	color: darkkhaki;
+	text-align: center;
+}
+.hMessage
+{
+	font-weight: bold;
+	font-size: small;
+	color: navy;
+	font-family: Verdana;
+	text-decoration: underline;
+}
+.errMessage
+{
+	font-family:Verdana;
+	font-size:small;
+	color:Red;
+	width:100%;
+}
+.comment
+{
+	font-style:italic;
+	font-size:small;
+}
+.comment1
+{
+	font-style:italic;
+	font-size:x-small;
+	color:Red;
+}
+.hStyle2
+{
+	font-weight: bold;
+	font-size:small; 
+	color: white;
+	background-color: #336699;
+	text-align: center;
+}
+.iStyle1
+{
+	font-weight: normal;
+	background-color:Blue;
+	text-align: center;
+}
+
+.txtrightalign
+{
+	text-align:right;
+}
+
+.lststyle1
+{
+	border-width:1px;
+	border-style:solid;
+}

@@ -1,0 +1,120 @@
+﻿
+@font-face {
+    font-family:"TT0142M";
+    src: url("TT0142M.TTF") /* TTF file for CSS3 browsers */
+}
+
+body 
+{
+	margin: 0;
+	padding: 0;
+width:100%;
+}
+#signinwithyourhathwa 
+{ 
+	 left: 953px; 
+	 top: 308px; 
+	 position: absolute; 
+	 width: 248px;
+	 height: 44px;
+	 z-index:5;
+} 
+
+ #RoundedRectangle3 
+{ 
+	 left: 1157px; 
+	 top: 526px; 
+	 position: absolute; 
+	 width: 96px;
+	 height: 35px;
+	 z-index:6;
+} 
+ #Ellipse1 
+{ 
+	 left: 1149px; 
+	 top: 533px; 
+	 position: absolute; 
+	 width: 21px;
+	 height: 21px;
+	 z-index:7;
+} 
+
+ #Ellipse1copy 
+{ 
+	 left: 1239px; 
+	 top: 533px; 
+	 position: absolute; 
+	 width: 21px;
+	 height: 21px;
+	 z-index:8;
+} 
+
+ #UserName 
+{ 
+	 left: 881px; 
+	 top: 391px; 
+	 position: absolute; 
+	 width: 122px;
+	 height: 16px;
+	 z-index:9;
+} 
+
+ #Layer4 
+{ 
+	 left: 1013px; 
+	 top: 386px; 
+	 position: absolute; 
+	 width: 255px;
+	 height: 33px;
+	 z-index:10;
+} 
+
+ #Password 
+{ 
+	 left: 902px; 
+	 top: 441px; 
+	 position: absolute; 
+	 width: 101px;
+	 height: 16px;
+	 z-index:11;
+} 
+
+ #Login 
+{ 
+	 left: 1186px; 
+	 top: 537px; 
+	 position: absolute; 
+	 width: 40px;
+	 height: 16px;
+	 z-index:12;
+} 
+
+ #ForgotPassword 
+{ 
+	 left: 1155px; 
+	 top: 575px; 
+	 position: absolute; 
+	 width: 100px;
+	 height: 12px;
+	 z-index:13;
+}  
+
+ #Layer4copy 
+{ 
+	 left: 1013px; 
+	 top: 436px; 
+	 position: absolute; 
+	 width: 255px;
+	 height: 33px;
+	 z-index:14;
+} 
+
+.Capchta
+{
+	left: 1013px;
+top: 485px;
+position: absolute;
+width: 255px;
+height: 33px;
+z-index: 14;
+	}

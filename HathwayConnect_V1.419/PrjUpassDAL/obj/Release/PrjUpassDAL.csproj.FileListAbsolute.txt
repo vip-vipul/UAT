@@ -1,0 +1,5 @@
+E:\Kiran\UPASS Inventory\PrjUpass\PrjUpassDAL\bin\Release\PrjUpassDAL.dll
+E:\Kiran\UPASS Inventory\PrjUpass\PrjUpassDAL\bin\Release\PrjUpassDAL.pdb
+E:\Kiran\UPASS Inventory\PrjUpass\PrjUpassDAL\obj\Release\ResolveAssemblyReference.cache
+E:\Kiran\UPASS Inventory\PrjUpass\PrjUpassDAL\obj\Release\PrjUpassDAL.dll
+E:\Kiran\UPASS Inventory\PrjUpass\PrjUpassDAL\obj\Release\PrjUpassDAL.pdb

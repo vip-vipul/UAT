@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsettblchildtv" targetNamespace="http://tempuri.org/dsettblchildtv.xsd" xmlns:mstns="http://tempuri.org/dsettblchildtv.xsd" xmlns="http://tempuri.org/dsettblchildtv.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsettblchildtv" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsettblchildtv" msprop:Generator_UserDSName="dsettblchildtv">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblchildtv" msprop:Generator_TableClassName="tblchildtvDataTable" msprop:Generator_TableVarName="tabletblchildtv" msprop:Generator_RowChangedName="tblchildtvRowChanged" msprop:Generator_TablePropName="tblchildtv" msprop:Generator_RowDeletingName="tblchildtvRowDeleting" msprop:Generator_RowChangingName="tblchildtvRowChanging" msprop:Generator_RowEvHandlerName="tblchildtvRowChangeEventHandler" msprop:Generator_RowDeletedName="tblchildtvRowDeleted" msprop:Generator_RowClassName="tblchildtvRow" msprop:Generator_UserTableName="tblchildtv" msprop:Generator_RowEvArgName="tblchildtvRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Accno" msprop:Generator_ColumnVarNameInTable="columnAccno" msprop:Generator_ColumnPropNameInRow="Accno" msprop:Generator_ColumnPropNameInTable="AccnoColumn" msprop:Generator_UserColumnName="Accno" type="xs:string" minOccurs="0" />
+              <xs:element name="ChildVC" msprop:Generator_ColumnVarNameInTable="columnChildVC" msprop:Generator_ColumnPropNameInRow="ChildVC" msprop:Generator_ColumnPropNameInTable="ChildVCColumn" msprop:Generator_UserColumnName="ChildVC" type="xs:string" minOccurs="0" />
+              <xs:element name="ChildStb" msprop:Generator_ColumnVarNameInTable="columnChildStb" msprop:Generator_ColumnPropNameInRow="ChildStb" msprop:Generator_ColumnPropNameInTable="ChildStbColumn" msprop:Generator_UserColumnName="ChildStb" type="xs:string" minOccurs="0" />
+              <xs:element name="Insdate" msprop:Generator_ColumnVarNameInTable="columnInsdate" msprop:Generator_ColumnPropNameInRow="Insdate" msprop:Generator_ColumnPropNameInTable="InsdateColumn" msprop:Generator_UserColumnName="Insdate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Insby" msprop:Generator_ColumnVarNameInTable="columnInsby" msprop:Generator_ColumnPropNameInRow="Insby" msprop:Generator_ColumnPropNameInTable="InsbyColumn" msprop:Generator_UserColumnName="Insby" type="xs:string" minOccurs="0" />
+              <xs:element name="Entity" msprop:Generator_ColumnVarNameInTable="columnEntity" msprop:Generator_ColumnPropNameInRow="Entity" msprop:Generator_ColumnPropNameInTable="EntityColumn" msprop:Generator_UserColumnName="Entity" type="xs:string" minOccurs="0" />
+              <xs:element name="Signature" msprop:Generator_ColumnVarNameInTable="columnSignature" msprop:Generator_ColumnPropNameInRow="Signature" msprop:Generator_ColumnPropNameInTable="SignatureColumn" msprop:Generator_UserColumnName="Signature" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Photo" msprop:Generator_ColumnVarNameInTable="columnPhoto" msprop:Generator_ColumnPropNameInRow="Photo" msprop:Generator_ColumnPropNameInTable="PhotoColumn" msprop:Generator_UserColumnName="Photo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="resiproof" msprop:Generator_ColumnVarNameInTable="columnresiproof" msprop:Generator_ColumnPropNameInRow="resiproof" msprop:Generator_ColumnPropNameInTable="resiproofColumn" msprop:Generator_UserColumnName="resiproof" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="idproof" msprop:Generator_ColumnVarNameInTable="columnidproof" msprop:Generator_ColumnPropNameInRow="idproof" msprop:Generator_ColumnPropNameInTable="idproofColumn" msprop:Generator_UserColumnName="idproof" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="logo" msprop:Generator_ColumnVarNameInTable="columnlogo" msprop:Generator_ColumnPropNameInRow="logo" msprop:Generator_ColumnPropNameInTable="logoColumn" msprop:Generator_UserColumnName="logo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="ip" msprop:Generator_ColumnVarNameInTable="columnip" msprop:Generator_ColumnPropNameInRow="ip" msprop:Generator_ColumnPropNameInTable="ipColumn" msprop:Generator_UserColumnName="ip" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

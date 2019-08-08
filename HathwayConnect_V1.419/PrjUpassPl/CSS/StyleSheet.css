@@ -1,0 +1,485 @@
+﻿ body {
+	margin: 0;
+	padding: 0;
+	background-image:url("/images/shutterstock19183222.png");
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-position:repeat-x;
+ }
+ 
+ #background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 1366px;
+	 height: 768px; 
+	 overflow: hidden;
+	 z-index:0;
+	} 
+
+ #stockphotohandholdin 
+{ 
+	 left: -22px; 
+	 top: -150px; 
+	 position: absolute; 
+	 width: 1411px;
+	 height: 1076px;
+	 z-index:1;
+} 
+
+ #stockphotoelectricca 
+{ 
+	 left: -4px; 
+	 top: -418px; 
+	 position: absolute; 
+	 width: 1375px;
+	 height: 1978px;
+	 z-index:2;
+} 
+
+ #shutterstock19183222 
+{ 
+	 left: -34px; 
+	 top: -467px; 
+	 position: absolute; 
+	 width: 1435px;
+	 height: 1936px;
+	 z-index:3;
+} 
+
+ #stockphotorenderingo 
+{ 
+	 left: 0px; 
+	 top: -70px; 
+	 position: absolute; 
+	 width: 1366px;
+	 height: 1057px;
+	 z-index:4;
+} 
+
+ #Layer2 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 1366px;
+	 height: 766px;
+	 z-index:5;
+} 
+
+ #Rectangle1 
+{ 
+	 left: -41px; 
+	 top: 743px; 
+	 position: absolute; 
+	 width: 1421px;
+	 height: 37px;
+	 z-index:6;
+} 
+
+ #Rectangle2 
+{ 
+	 left: 1086px; 
+	 top: 699px; 
+	 position: absolute; 
+	 width: 229px;
+	 height: 27px;
+	 z-index:7;
+} 
+
+ #VectorSmartObject 
+{ 
+	 left: 1315px; 
+	 top: 697px; 
+	 background:url(VectorSmartObject.png)no-repeat;
+	 position: absolute; 
+	 width: 16px;
+	 height: 26px;
+	 z-index:8;
+} 
+
+ #Search 
+{ 
+	 left: 1099px; 
+	 top: 709px; 
+	 position: absolute; 
+	 width: 31px;
+	 height: 8px;
+	 z-index:9;
+} 
+
+ #AllRightsReserved201 
+{ 
+	 left: 706px; 
+	 top: 751px; 
+	 position: absolute; 
+	 width: 640px;
+	 height: 13px;
+	 z-index:10;
+} 
+
+ #VectorSmartObject_0 
+{ 
+	 left: 63px; 
+	 top: 19px; 
+	 position: absolute; 
+	 width: 269px;
+	 height: 57px;
+	 z-index:11;
+} 
+
+ #VectorSmartObject_1 
+{ 
+	 left: 1107px; 
+	 top: 16px; 
+	 position: absolute; 
+	 width: 194px;
+	 height: 62px;
+	 z-index:12;
+} 
+
+ #Rectangle4 
+{ 
+	 left: -33px; 
+	 top: 95px; 
+	 opacity: 0.1;
+     filter: alpha(opacity=0.1);
+	 position: absolute; 
+	 width: 1526px;
+	 height: 89px;
+	 z-index:13;
+} 
+
+ #WelcomeKAMALAOFFICEL 
+{ 
+	 left: 1008px; 
+	 top: 123px; 
+	 position: absolute; 
+	 width: 247px;
+	 height: 12px;
+	 z-index:14;
+} 
+
+ #LastLogin23122015031 
+{ 
+	 left: 1049px; 
+	 top: 146px; 
+	 position: absolute; 
+	 width: 206px;
+	 height: 9px;
+	 z-index:15;
+} 
+
+ #VectorSmartObject_2 
+{ 
+	 left: 135px; 
+	 top: 219px; 
+	 position: absolute; 
+	 width: 1117px;
+	 height: 424px;
+	 z-index:16;
+} 
+
+ #Rectangle5 
+{ 
+	 left: 131px; 
+	 top: 653px; 
+	 position: absolute; 
+	 width: 187px;
+	 height: 29px;
+	 z-index:17;
+} 
+
+ #Rectangle5copy 
+{ 
+	 left: 336px; 
+	 top: 653px; 
+	 position: absolute; 
+	 width: 163px;
+	 height: 29px;
+	 z-index:18;
+} 
+
+ #Rectangle5copy2 
+{ 
+	 left: 519px; 
+	 top: 653px; 
+	 position: absolute; 
+	 width: 189px;
+	 height: 29px;
+	 z-index:19;
+} 
+
+ #Rectangle5copy3 
+{ 
+	 left: 726px; 
+	 top: 653px; 
+	 position: absolute; 
+	 width: 172px;
+	 height: 29px;
+	 z-index:20;
+} 
+
+ #Rectangle5copy4 
+{ 
+	 left: 919px; 
+	 top: 653px; 
+	 position: absolute; 
+	 width: 172px;
+	 height: 29px;
+	 z-index:21;
+} 
+
+ #Rectangle5copy5 
+{ 
+	 left: 1106px; 
+	 top: 653px; 
+	 position: absolute; 
+	 width: 147px;
+	 height: 29px;
+	 z-index:22;
+} 
+
+ #Rectangle5copy6 
+{ 
+	 left: 131px; 
+	 top: 653px; 
+	 position: absolute; 
+	 width: 187px;
+	 height: 29px;
+	 z-index:23;
+} 
+
+ #Rectangle5copy6_0 
+{ 
+	 left: 336px; 
+	 top: 653px; 
+	 position: absolute; 
+	 width: 163px;
+	 height: 29px;
+	 z-index:24;
+} 
+
+ #Rectangle5copy6_1 
+{ 
+	 left: 519px; 
+	 top: 653px; 
+	 position: absolute; 
+	 width: 189px;
+	 height: 29px;
+	 z-index:25;
+} 
+
+ #Rectangle5copy6_2 
+{ 
+	 left: 726px; 
+	 top: 653px; 
+	 position: absolute; 
+	 width: 172px;
+	 height: 29px;
+	 z-index:26;
+} 
+
+ #Rectangle5copy6_3 
+{ 
+	 left: 919px; 
+	 top: 653px; 
+	 position: absolute; 
+	 width: 172px;
+	 height: 29px;
+	 z-index:27;
+} 
+
+ #Rectangle5copy6_4 
+{ 
+	 left: 1106px; 
+	 top: 653px; 
+	 position: absolute; 
+	 width: 147px;
+	 height: 29px;
+	 z-index:28;
+} 
+
+ #Last5Transactions 
+{ 
+	 left: 154px; 
+	 top: 663px; 
+	 position: absolute; 
+	 width: 131px;
+	 height: 9px;
+	 z-index:29;
+} 
+
+ #ReceiptEntryDetails 
+{ 
+	 left: 352px; 
+	 top: 663px; 
+	 position: absolute; 
+	 width: 133px;
+	 height: 9px;
+	 z-index:30;
+} 
+
+ #ReceiptReversalDetai 
+{ 
+	 left: 536px; 
+	 top: 663px; 
+	 position: absolute; 
+	 width: 157px;
+	 height: 9px;
+	 z-index:31;
+} 
+
+ #PartyLeadgerDetails 
+{ 
+	 left: 746px; 
+	 top: 663px; 
+	 position: absolute; 
+	 width: 137px;
+	 height: 9px;
+	 z-index:32;
+} 
+
+ #ServiceStatusDetails 
+{ 
+	 left: 935px; 
+	 top: 663px; 
+	 position: absolute; 
+	 width: 139px;
+	 height: 9px;
+	 z-index:33;
+} 
+
+ #UserDetails 
+{ 
+	 left: 1139px; 
+	 top: 663px; 
+	 position: absolute; 
+	 width: 77px;
+	 height: 9px;
+	 z-index:34;
+} 
+
+ #VectorSmartObject_3 
+{ 
+	 left: 102px; 
+	 top: 123px; 
+	 position: absolute; 
+	 width: 687px;
+	 height: 35px;
+	 z-index:35;
+} 
+
+ #VectorSmartObject_4 
+{ 
+	 left: 102px; 
+	 top: 123px; 
+	 position: absolute; 
+	 width: 756px;
+	 height: 35px;
+	 z-index:36;
+} 
+
+ #home 
+{ 
+	 left: 152px; 
+	 top: 134px; 
+	 position: absolute; 
+	 width: 48px;
+	 height: 12px;
+	 z-index:37;
+} 
+
+ #LCOuserDefine 
+{ 
+	 left: 320px; 
+	 top: 134px; 
+	 position: absolute; 
+	 width: 131px;
+	 height: 12px;
+	 z-index:38;
+} 
+
+ #Transaction 
+{ 
+	 left: 518px; 
+	 top: 134px; 
+	 position: absolute; 
+	 width: 111px;
+	 height: 12px;
+	 z-index:39;
+} 
+
+ #Reports 
+{ 
+	 left: 732px; 
+	 top: 134px; 
+	 position: absolute; 
+	 width: 65px;
+	 height: 12px;
+	 z-index:40;
+} 
+
+ #Ellipse1 
+{ 
+	 left: 1278px; 
+	 top: 102px; 
+	 position: absolute; 
+	 width: 60px;
+	 height: 60px;
+	 z-index:41;
+} 
+
+ #Layer3 
+{ 
+	 left: 1281px; 
+	 top: 109px; 
+	 position: absolute; 
+	 width: 55px;
+	 height: 52px;
+	 z-index:42;
+} 
+
+ #Layer4 
+{ 
+	 left: 1281px; 
+	 top: 109px; 
+	 position: absolute; 
+	 width: 55px;
+	 height: 52px;
+	 z-index:43;
+} 
+
+ #Signout 
+{ 
+	 left: 1287px; 
+	 top: 164px; 
+	 position: absolute; 
+	 width: 43px;
+	 height: 12px;
+	 z-index:44;
+} 
+
+ #showmenuicon 
+{ 
+	 left: 56px; 
+	 top: 112px; 
+	 position: absolute; 
+	 width: 55px;
+	 height: 55px;
+	 z-index:45;
+} 
+
+ #showmenuiconcopy 
+{ 
+	 left: 56px; 
+	 top: 112px; 
+	 position: absolute; 
+	 width: 55px;
+	 height: 55px;
+	 z-index:46;
+} 

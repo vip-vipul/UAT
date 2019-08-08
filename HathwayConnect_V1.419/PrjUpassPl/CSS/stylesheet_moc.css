@@ -1,0 +1,123 @@
+.PortletHeaderColor {
+	BACKGROUND-COLOR: #336699
+}
+.TrColor {
+	BACKGROUND-COLOR: #E4F7FE;
+}
+.RegionNoBorder {
+	
+}
+.RegionBorder {
+	BORDER-RIGHT: #336699 1px solid; BORDER-TOP: #336699 1px solid; BORDER-LEFT: #336699 1px solid; BORDER-BOTTOM: #336699 1px solid
+}
+.PageColor {
+	BACKGROUND-COLOR: #ffffff
+}
+.PageBgImage {
+	
+}
+.PageBg {
+	BACKGROUND-COLOR: #ffffff
+}
+.LeftCurve {
+	BACKGROUND-POSITION: left top; BACKGROUND-ATTACHMENT: scroll; BACKGROUND-IMAGE: url(images/FFFFFFl.gif); BACKGROUND-REPEAT: no-repeat
+}
+.RightCurve {
+	BACKGROUND-POSITION: right top; BACKGROUND-ATTACHMENT: scroll; BACKGROUND-IMAGE: url(images/FFFFFFr.gif); BACKGROUND-REPEAT: no-repeat
+}
+.PortletBodyColor {
+	BACKGROUND-COLOR: #ffffff
+}
+.RegionHeaderColor {
+	BORDER-RIGHT: #336699 0px solid; BORDER-TOP: #336699 0px solid; BORDER-LEFT: #336699 0px solid; BORDER-BOTTOM: #336699 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.PortletSubheaderColor {
+	BACKGROUND-COLOR: #eeeedd
+}
+.PortletHeaderText {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.PortletHeaderLink {
+	FONT-SIZE: 8pt; COLOR: #336699; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.PortletSubHeaderText {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.PortletSubHeaderLink {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.PortletHeading1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #336699; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.PortletText1 {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.PortletHeading2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #336699; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.PortletText2 {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.PortletHeading3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 7pt; COLOR: #336699; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.PortletText3 {
+	FONT-SIZE: 7pt; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.PortletHeading4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 6pt; COLOR: #336699; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.PortletText4 {
+	FONT-SIZE: 6pt; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.BannerColor {
+	BACKGROUND-COLOR: #ffffff
+}
+.BannerGreeting {
+	FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: #336699; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.BannerTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: #336699; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.BannerLink {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.BannerSecondaryLink {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.BannerSecondaryText {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.TabForegroundColor {
+	BACKGROUND-COLOR: #336699
+}
+.TabForegroundText {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif
+}
+.TabBackgroundColor {
+	BACKGROUND-COLOR: #cccc99
+}
+.TabBackgroundText {
+	FONT-SIZE: 9pt; COLOR: #003366; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif; TEXT-DECORATION: none
+}
+.SubTabBgText {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #cccc99; FONT-FAMILY: Tahoma, Verdana, Geneva, Arial, Helvetica,sans-serif; TEXT-DECORATION: none
+}
+.LeftTabBgSlant {
+	BACKGROUND: url(images/FFFFFFtl.gif) #cccc99 no-repeat left top
+}
+.LeftTabForeSlant {
+	BACKGROUND: url(images/FFFFFFtl.gif) #336699 no-repeat left top
+}
+.LeftSubTab {
+	BACKGROUND: url(images/FFFFFFsl.gif) #336699 no-repeat left top
+}
+.RightTabBgCurve {
+	BACKGROUND: url(images/FFFFFFtr.gif) #cccc99 no-repeat right top
+}
+.RightTabForeCurve {
+	BACKGROUND: url(images/FFFFFFtr.gif) #336699 no-repeat right top
+}
+.RightSubTab {
+	BACKGROUND: url(images/FFFFFFsr.gif) #336699 no-repeat right top
+}

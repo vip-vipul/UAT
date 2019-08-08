@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Customer_Receipt" targetNamespace="http://tempuri.org/Customer_Receipt.xsd" xmlns:mstns="http://tempuri.org/Customer_Receipt.xsd" xmlns="http://tempuri.org/Customer_Receipt.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Customer_Receipt" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Customer_Receipt" msprop:Generator_UserDSName="Customer_Receipt">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PlanDetails" msprop:Generator_TableClassName="PlanDetailsDataTable" msprop:Generator_TableVarName="tablePlanDetails" msprop:Generator_TablePropName="PlanDetails" msprop:Generator_RowDeletingName="PlanDetailsRowDeleting" msprop:Generator_RowChangingName="PlanDetailsRowChanging" msprop:Generator_RowEvHandlerName="PlanDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="PlanDetailsRowDeleted" msprop:Generator_UserTableName="PlanDetails" msprop:Generator_RowChangedName="PlanDetailsRowChanged" msprop:Generator_RowEvArgName="PlanDetailsRowChangeEvent" msprop:Generator_RowClassName="PlanDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PlanName" msprop:Generator_ColumnVarNameInTable="columnPlanName" msprop:Generator_ColumnPropNameInRow="PlanName" msprop:Generator_ColumnPropNameInTable="PlanNameColumn" msprop:Generator_UserColumnName="PlanName" type="xs:string" minOccurs="0" />
+              <xs:element name="PlanType" msprop:Generator_ColumnVarNameInTable="columnPlanType" msprop:Generator_ColumnPropNameInRow="PlanType" msprop:Generator_ColumnPropNameInTable="PlanTypeColumn" msprop:Generator_UserColumnName="PlanType" type="xs:string" minOccurs="0" />
+              <xs:element name="LCOPrice" msprop:Generator_ColumnVarNameInTable="columnLCOPrice" msprop:Generator_ColumnPropNameInRow="LCOPrice" msprop:Generator_ColumnPropNameInTable="LCOPriceColumn" msprop:Generator_UserColumnName="LCOPrice" type="xs:double" minOccurs="0" />
+              <xs:element name="CustPrice" msprop:Generator_ColumnVarNameInTable="columnCustPrice" msprop:Generator_ColumnPropNameInRow="CustPrice" msprop:Generator_ColumnPropNameInTable="CustPriceColumn" msprop:Generator_UserColumnName="CustPrice" type="xs:double" minOccurs="0" />
+              <xs:element name="ChannelCount" msprop:Generator_ColumnVarNameInTable="columnChannelCount" msprop:Generator_ColumnPropNameInRow="ChannelCount" msprop:Generator_ColumnPropNameInTable="ChannelCountColumn" msprop:Generator_UserColumnName="ChannelCount" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

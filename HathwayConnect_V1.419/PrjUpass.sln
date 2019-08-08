@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrjUpassPl", "PrjUpassPl\PrjUpassPl.csproj", "{5B597E1A-BE2A-4A21-BF0F-E4EAE7DB12C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrjUpassDAL", "PrjUpassDAL\PrjUpassDAL.csproj", "{4FBAE1E5-394F-427C-BC3B-1BCFF51D1018}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrjUpassBLL", "PrjUpassBLL\PrjUpassBLL.csproj", "{FC6F3E76-0FF2-4887-9E44-3602400BD760}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PrjUpassTest", "PrjUpassTest\PrjUpassTest.vdproj", "{33709C52-DB49-4A7F-8783-2FDE6C1B0A61}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HathwayLCO", "Hathway\Hathway.vdproj", "{96B88BC6-00D3-49FA-B881-6F95CB57F1A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B597E1A-BE2A-4A21-BF0F-E4EAE7DB12C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B597E1A-BE2A-4A21-BF0F-E4EAE7DB12C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B597E1A-BE2A-4A21-BF0F-E4EAE7DB12C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B597E1A-BE2A-4A21-BF0F-E4EAE7DB12C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FBAE1E5-394F-427C-BC3B-1BCFF51D1018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBAE1E5-394F-427C-BC3B-1BCFF51D1018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBAE1E5-394F-427C-BC3B-1BCFF51D1018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBAE1E5-394F-427C-BC3B-1BCFF51D1018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC6F3E76-0FF2-4887-9E44-3602400BD760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC6F3E76-0FF2-4887-9E44-3602400BD760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC6F3E76-0FF2-4887-9E44-3602400BD760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC6F3E76-0FF2-4887-9E44-3602400BD760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33709C52-DB49-4A7F-8783-2FDE6C1B0A61}.Debug|Any CPU.ActiveCfg = Debug
+		{33709C52-DB49-4A7F-8783-2FDE6C1B0A61}.Release|Any CPU.ActiveCfg = Release
+		{96B88BC6-00D3-49FA-B881-6F95CB57F1A7}.Debug|Any CPU.ActiveCfg = Debug
+		{96B88BC6-00D3-49FA-B881-6F95CB57F1A7}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

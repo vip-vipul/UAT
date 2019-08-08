@@ -1,0 +1,78 @@
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Thu Mar 15 16:10:53 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   HathwayCTL.txt
+Data File:      E:\Ascentech\Pawan\Prod project version wise\HathwayConnect\UAT\HathwayConnect_V1.34\PrjUpassPl\Transaction\MyExcelFile\1013476675\Warehousedata1013476675_15032018041051.txt
+  Bad File:     Warehousedata1013476675_15032018041051.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table AOUP_LCOPRE_PIS_INVENT_RAW, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+NUM_INVENTVAL_TRANSID               FIRST     *  WHT      CHARACTER            
+VAR_INVENTVAL_UPLOAD_ID                                   CONSTANT
+    Value is '1013476675_15-Mar-2018_04:10:51_1417'
+VAR_INVENTVAL_ORDERNO                NEXT     *  WHT      CHARACTER            
+VAR_INVENTVAL_LCOCODE                NEXT     *  WHT      CHARACTER            
+VAR_INVENTVAL_DEVICEID               NEXT     *  WHT      CHARACTER            
+VAR_INVENTVAL_BOXTYPE                NEXT     *  WHT      CHARACTER            
+VAR_INVENTVAL_TYPE                   NEXT     *  WHT      CHARACTER            
+VAR_INVENTVAL_MODEL                  NEXT     *  WHT      CHARACTER            
+VAR_INVENTVAL_MANUFACTURER           NEXT     *  WHT      CHARACTER            
+VAR_INVENTVAL_COMPANY                NEXT     *  WHT      CHARACTER            
+VAR_INVENTVAL_CITY                   NEXT     *  WHT      CHARACTER            
+VAR_INVENTVAL_STATE                  NEXT     *  WHT      CHARACTER            
+NUM_INVENTVAL_SCHEAMEID              NEXT     *  WHT      CHARACTER            
+VAR_INVENTVAL_INSBY                  NEXT     *  WHT      CHARACTER            
+VAR_INVENTVAL_STATUS                 NEXT     *  WHT      CHARACTER            
+NUM_INVENTVAL_STBID                  NEXT     *  WHT      CHARACTER            
+DAT_INVENTVAL_INSDATE                                     CONSTANT
+    Value is '15-Mar-2018 04:10:51'
+VAR_INVENTVAL_APISTATUS              NEXT     *  WHT      CHARACTER            
+VAR_INVENTVAL_APISMSG                NEXT     *  WHT      CHARACTER            
+DAT_INVENTVAL_VALDATE                NEXT     *  WHT      CHARACTER            
+VAR_INVENTVAL_VALTYPE                                     CONSTANT
+    Value is 'N'
+VAR_INVENTVAL_TRANSTYPE                                   CONSTANT
+    Value is 'SPSN'
+VAR_INVENTVAL_IP                                          CONSTANT
+    Value is '127.0.0.1'
+VAR_INVENTVAL_REMARK                                      CONSTANT
+    Value is 'sd'
+
+value used for ROWS parameter changed from 64 to 54
+
+Table AOUP_LCOPRE_PIS_INVENT_RAW:
+  4 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 254988 bytes(54 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             4
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Thu Mar 15 16:10:53 2018
+Run ended on Thu Mar 15 16:10:55 2018
+
+Elapsed time was:     00:00:01.55
+CPU time was:         00:00:00.05

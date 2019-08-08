@@ -1,0 +1,1730 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B597E1A-BE2A-4A21-BF0F-E4EAE7DB12C2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrjUpassPl</RootNamespace>
+    <AssemblyName>PrjUpassPl</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30512.20315, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.TemplateEngine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Viewing.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Prompting, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.XmlSerialize, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\chosen-sprite.png" />
+    <Content Include="CSS\chosen.css" />
+    <Content Include="CSS\jquery-ui.css" />
+    <Content Include="CSS\jquery.sweet-dropdown.min.css" />
+    <Content Include="CSS\StyleSheet.css" />
+    <Content Include="CSS\StyleSheet2.css" />
+    <Content Include="CSS\StyleSheet3.css" />
+    <Content Include="GenerateCaptcha.aspx" />
+    <Content Include="HOME.jpg" />
+    <Content Include="HOME12.jpg" />
+    <Content Include="HOMEbkp.jpg" />
+    <Content Include="IconImage\Account Invoice Details.jpg" />
+    <Content Include="IconImage\activation vs deactivation copy.jpg" />
+    <Content Include="IconImage\Auto expiry Notification.jpg" />
+    <Content Include="IconImage\balance allocation Icon.jpg" />
+    <Content Include="IconImage\Bulk Change Plan.jpg" />
+    <Content Include="IconImage\Bulk Discount.jpg" />
+    <Content Include="IconImage\Bulk Renewal.jpg" />
+    <Content Include="IconImage\Bulk Transaction.jpg" />
+    <Content Include="IconImage\Change Password Icon.jpg" />
+    <Content Include="IconImage\Details Icon.jpg" />
+    <Content Include="IconImage\editicon.png" />
+    <Content Include="IconImage\LCO Details.jpg" />
+    <Content Include="IconImage\LCO GSTN.jpg" />
+    <Content Include="IconImage\LCO Invoice Details.jpg" />
+    <Content Include="IconImage\LCO Other Details.jpg" />
+    <Content Include="IconImage\No_available_image.gif" />
+    <Content Include="IconImage\online payment Icon.jpg" />
+    <Content Include="IconImage\osd &amp; bmail Icon.jpg" />
+    <Content Include="IconImage\OSD Bmail Deactivation.jpg" />
+    <Content Include="IconImage\Renewal Icon.jpg" />
+    <Content Include="IconImage\sms Icon.jpg" />
+    <Content Include="IconImage\transaction Icon.jpg" />
+    <Content Include="IconImage\Transaction Summary.jpg" />
+    <Content Include="IconImage\User Creation Icon.jpg" />
+    <Content Include="IconImage\view_refresh.png" />
+    <Content Include="Images\bannerlogin.jpg" />
+    <Content Include="Images\billdesk1.jpg" />
+    <Content Include="Images\Citrus_Payment_Gateway.png" />
+    <Content Include="Images\homeimage.jpg" />
+    <Content Include="Images\IconImage\Account Invoice Details.jpg" />
+    <Content Include="Images\IconImage\activation vs deactivation copy.jpg" />
+    <Content Include="Images\IconImage\Auto expiry Notification.jpg" />
+    <Content Include="Images\IconImage\balance allocation Icon.jpg" />
+    <Content Include="Images\IconImage\Bulk Change Plan.jpg" />
+    <Content Include="Images\IconImage\Bulk Renewal.jpg" />
+    <Content Include="Images\IconImage\Bulk Transaction.jpg" />
+    <Content Include="Images\IconImage\Change Password Icon.jpg" />
+    <Content Include="Images\IconImage\Details Icon.jpg" />
+    <Content Include="Images\IconImage\LCO Details.jpg" />
+    <Content Include="Images\IconImage\LCO Invoice Details.jpg" />
+    <Content Include="Images\IconImage\LCO Other Details.jpg" />
+    <Content Include="Images\IconImage\No_available_image.gif" />
+    <Content Include="Images\IconImage\online payment Icon.jpg" />
+    <Content Include="Images\IconImage\osd &amp; bmail Icon.jpg" />
+    <Content Include="Images\IconImage\OSD Bmail Deactivation.jpg" />
+    <Content Include="Images\IconImage\Renewal Icon.jpg" />
+    <Content Include="Images\IconImage\sms Icon.jpg" />
+    <Content Include="Images\IconImage\transaction Icon.jpg" />
+    <Content Include="Images\IconImage\Transaction Summary.jpg" />
+    <Content Include="Images\IconImage\User Creation Icon.jpg" />
+    <Content Include="Images\no-preview.jpg" />
+    <Content Include="Images\no_doc_uploaded.jpg" />
+    <Content Include="Images\LoginPromo.mp4" />
+    <Content Include="Images\PayU.png" />
+    <Content Include="Img\Android.png" />
+    <Content Include="Img\Background.jpg" />
+    <Content Include="Img\Balance.jpg" />
+    <Content Include="Img\Bulk.jpg" />
+    <Content Include="Img\Customer Details.jpg" />
+    <Content Include="Img\DashboardIcon.jpg" />
+    <Content Include="Img\dot3.png" />
+    <Content Include="Img\E-CAF.jpg" />
+    <Content Include="Img\E-CAFEntry.jpg" />
+    <Content Include="Img\E-CAFEntryForm.jpg" />
+    <Content Include="Img\GlobalAutoRenewal.jpg" />
+    <Content Include="Img\inside_A_b.jpg" />
+    <Content Include="Img\inside_A_b_2.jpg" />
+    <Content Include="Img\Inventory_Management_Icon.jpg" />
+    <Content Include="Img\LCO Admin.jpg" />
+    <Content Include="Img\Legal-Icon.jpg" />
+    <Content Include="Img\LegaliconNew.jpg" />
+    <Content Include="Img\Marketing &amp; Management.jpg" />
+    <Content Include="Img\Messenger.jpg" />
+    <Content Include="Img\Notification.jpg" />
+    <Content Include="Img\Pack Management.jpg" />
+    <Content Include="Img\Report.jpg" />
+    <Content Include="HOMEbkp2.bmp" />
+    <Content Include="Img\Schemes &amp; Offers Icon.jpg" />
+    <Content Include="Img\Selfcare.jpg" />
+    <Content Include="index.html" />
+    <Content Include="JS\jquery-1.10.2.js" />
+    <Content Include="JS\jquery-ui.js" />
+    <Content Include="JS\jquery.sweet-dropdown.min.js" />
+    <Content Include="JS\quciksearch.js" />
+    <Content Include="JS\ScrollGrid.js" />
+    <Content Include="JS\tabcontent.js" />
+    <Content Include="Leaflet\HD TV Leaflet_Maharashtra-01.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="CSS\jqueryui.css" />
+    <Content Include="CSS\main.css" />
+    <Content Include="CSS\MasterPageStyle.css" />
+    <Content Include="CSS\Style.css" />
+    <Content Include="CSS\stylesheet_moc.css" />
+    <Content Include="CSS\stylSVC.css" />
+    <Content Include="forgotpass.aspx" />
+    <Content Include="Images\bullet_toggle_minus.png" />
+    <Content Include="Images\bullet_toggle_plus.png" />
+    <Content Include="Images\button.png" />
+    <Content Include="Images\Calendar_scheduleHS.png" />
+    <Content Include="Images\close.png" />
+    <Content Include="Images\closebtn.png" />
+    <Content Include="Images\Final_HD_scheme_mailer.jpg" />
+    <Content Include="Images\grd_alt.png" />
+    <Content Include="Images\grd_alt1.png" />
+    <Content Include="Images\grd_alt_23.png" />
+    <Content Include="Images\grd_alt_23_new.png" />
+    <Content Include="Images\grd_head.png" />
+    <Content Include="Images\grd_headnew.png" />
+    <Content Include="Images\grd_head_new.png" />
+    <Content Include="Images\grd_pgr.png" />
+    <Content Include="Images\HathwayLogo.gif" />
+    <Content Include="Images\HathwayLogo.png" />
+    <Content Include="Images\Hathway_Menu_page_Main.jpg" />
+    <Content Include="Images\loader.GIF" />
+    <Content Include="Images\Menu_page_Main.jpg" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\upass.png" />
+    <Content Include="JS\jquery-1.7.2.min.js" />
+    <Content Include="JS\jquery.min.js" />
+    <Content Include="JS\jqueryui.min.js" />
+    <Content Include="JS\printElement.js" />
+    <Content Include="Master\FrmAutoEcsLcoConfig.aspx" />
+    <Content Include="Master\frmDashboard.aspx" />
+    <Content Include="Master\frmgstn.aspx" />
+    <Content Include="Master\FrmHwayUserCreditLimit.aspx" />
+    <Content Include="Master\frmLCODetailsUpdate.aspx" />
+    <Content Include="Master\frmLCOPreMSOUserDefine.aspx" />
+    <Content Include="Master\frmLCOPreUserDefine.aspx" />
+    <Content Include="Master\frmLCORegistration.aspx" />
+    <Content Include="Master\frmMessenger.aspx" />
+    <Content Include="Master\frmOtherLcoDetails.aspx" />
+    <Content Include="Master\mstComplaintRegistration.aspx" />
+    <Content Include="Master\mstecafcustomerdetails.aspx" />
+    <Content Include="Master\mstecafstbtransadminapp.aspx" />
+    <Content Include="Master\mstecafstbtransfer.aspx" />
+    <Content Include="Master\mstecafstbtranslcoapp.aspx" />
+    <Content Include="Master\mstecafstbtranslcoapplist.aspx" />
+    <Content Include="Master\mstecafstbtranslcoconfig.aspx" />
+    <Content Include="Master\mstHwayLCOMsgBroadcast.aspx" />
+    <Content Include="Master\mstHwayMsgBrodcast.aspx" />
+    <Content Include="Master\mstLCOAdminPages.aspx" />
+    <Content Include="Master\TransAssignBtnRights.aspx" />
+    <Content Include="NoAccessRights.aspx" />
+    <Content Include="ProfileImages\adduser.png" />
+    <Content Include="RandStrGenerator.asmx" />
+    <Content Include="Reports\EcafPages.aspx" />
+    <Content Include="Reports\frmMeddleBulkTransaction.aspx" />
+    <Content Include="Reports\frmMiddlePageBulkTransaction.aspx" />
+    <Content Include="Reports\rcptPaymentReceiptInvoice.aspx" />
+    <Content Include="Reports\rptAddPlanTopup.aspx" />
+    <Content Include="Reports\rptAddPlanTransDET.aspx" />
+    <Content Include="Reports\rptAddPlanTransDET_JV.aspx" />
+    <Content Include="Reports\rptAddPlanTransLCO.aspx" />
+    <Content Include="Reports\rptAddPlanTransLCO_JV.aspx" />
+    <Content Include="Reports\rptAddPlanTransMSO.aspx" />
+    <Content Include="Reports\rptAddPlanTransMSO_JV.aspx" />
+    <Content Include="Reports\rptAddPlanTransUSER.aspx" />
+    <Content Include="Reports\rptAddPlanTransUSER_JV.aspx" />
+    <Content Include="Reports\rptBtnUserRights.aspx" />
+    <Content Include="Reports\rptbulkACD_DEACTSch.aspx" />
+    <Content Include="Reports\rptBulkACTDCTFileProcess.aspx" />
+    <Content Include="Reports\rptBulkActFileProcess.aspx" />
+    <Content Include="Reports\rptBulkActFileProcessRemove.aspx" />
+    <Content Include="Reports\rptBulkActTransactionProc.aspx" />
+    <Content Include="Reports\rptbulkchangetransproc.aspx" />
+    <Content Include="Reports\rptBulkDiscountDet.aspx" />
+    <Content Include="Reports\rptBulkEcafReport.aspx" />
+    <Content Include="Reports\rptBulkFileProcess.aspx" />
+    <Content Include="Reports\rptBulkTransactionProc.aspx" />
+    <Content Include="Reports\rptBulkUpload.aspx" />
+    <Content Include="Reports\rptChildTVDiscountReport.aspx" />
+    <Content Include="Reports\rptCompDetails.aspx" />
+    <Content Include="Reports\rptcustcandetails.aspx" />
+    <Content Include="Reports\RptCustEcsDetails.aspx" />
+    <Content Include="Reports\rptCustomerModify.aspx" />
+    <Content Include="Reports\rptDownloadAgreement.aspx" />
+    <Content Include="Reports\rptEcafCustDetails.aspx" />
+    <Content Include="Reports\rptExpired.aspx" />
+    <Content Include="Reports\rptExpiry.aspx" />
+    <Content Include="Reports\rptExpiry_new.aspx" />
+    <Content Include="Reports\rptHwaylcolegelDet.aspx" />
+    <Content Include="Reports\rptInvBulkwhrehousevalidation.aspx" />
+    <Content Include="Reports\rptInventorySearch.aspx" />
+    <Content Include="Reports\rptINVPrePartyLedger.aspx" />
+    <Content Include="Reports\rptINVPrePartyLedgerDET.aspx" />
+    <Content Include="Reports\rptInvunusedSTBVC.aspx" />
+    <Content Include="Reports\rptLastFive.aspx" />
+    <Content Include="Reports\rptLCOAllDetails.aspx" />
+    <Content Include="Reports\rptLCOAllDetailsNew.aspx" />
+    <Content Include="Reports\rptLCOPaymentRevoke.aspx" />
+    <Content Include="Reports\rptLCOPlanShare.aspx" />
+    <Content Include="Reports\rptlcoprebulktemperrmsg.aspx" />
+    <Content Include="Reports\rptLcowiseAwailBalDet.aspx" />
+    <Content Include="Reports\rptLcoWiseNotification.aspx" />
+    <Content Include="Reports\rptLcowiseUserdetails.aspx" />
+    <Content Include="Reports\rptNew_Activation.aspx" />
+    <Content Include="Reports\rptnoncasreport.aspx" />
+    <Content Include="Reports\rptNotificationSent.aspx" />
+    <Content Include="Reports\rptObrmCustMast.aspx" />
+    <Content Include="Reports\rptpartyledopenbal.aspx" />
+    <Content Include="Reports\rptPlanDetails.aspx" />
+    <Content Include="Reports\rptPreCustLastTransDet.aspx" />
+    <Content Include="Reports\rptPrePartyLedgerDET.aspx" />
+    <Content Include="Reports\rptPrePartyLedgerLCO.aspx" />
+    <Content Include="Reports\rptSelfcareDebitReport.aspx" />
+    <Content Include="Reports\rptSelfCareTransaction.aspx" />
+    <Content Include="Reports\rptserviceActDact.aspx" />
+    <Content Include="Reports\rptSmsDelivery.aspx" />
+    <Content Include="Reports\rptsplcoprecolldetails.aspx" />
+    <Content Include="Reports\RptSTBLCOTransRejected.aspx" />
+    <Content Include="Reports\rptSTBSummary.aspx" />
+    <Content Include="Reports\RptSTBTransfer.aspx" />
+    <Content Include="Reports\rptSWAP_FaultyDetails.aspx" />
+    <Content Include="Reports\rptUserAcc_Mapping.aspx" />
+    <Content Include="Reports\rptUserdetailsLcowiseDet.aspx" />
+    <Content Include="Reports\rptUserdetailsMSOwiseDet.aspx" />
+    <Content Include="Reports\Script\2.3.0-crypto-md5.js" />
+    <Content Include="Reports\Script\Login.js" />
+    <Content Include="Reports\ViewPdf.aspx" />
+    <Content Include="start_img\Background.png" />
+    <Content Include="start_img\button copy copy.png" />
+    <Content Include="start_img\button copy.png" />
+    <Content Include="start_img\Ellipse1.png" />
+    <Content Include="start_img\Ellipse1copy.png" />
+    <Content Include="start_img\ForgotPassword.png" />
+    <Content Include="start_img\HOME_1.png" />
+    <Content Include="start_img\HOME_2.png" />
+    <Content Include="start_img\HOME_a.png" />
+    <Content Include="start_img\Layer4.png" />
+    <Content Include="start_img\Layer4copy.png" />
+    <Content Include="start_img\Layer8.png" />
+    <Content Include="start_img\Login.png" />
+    <Content Include="start_img\LOGIN_PAGE.jpg" />
+    <Content Include="start_img\Password.png" />
+    <Content Include="start_img\RoundedRectangle3.png" />
+    <Content Include="start_img\signinwithyourhathwa.png" />
+    <Content Include="start_img\UserName.png" />
+    <Content Include="start_img\VectorSmartObject.png" />
+    <Content Include="start_img\VectorSmartObject_0.png" />
+    <Content Include="start_img\VectorSmartObject_1.png" />
+    <Content Include="template1\tabbg.gif" />
+    <Content Include="template1\tabcontent.css" />
+    <Content Include="Transaction\ankit.aspx" />
+    <Content Include="Transaction\CustomerSearchTest.aspx" />
+    <Content Include="Transaction\frmAssignPlan.aspx" />
+    <Content Include="Transaction\frmCancelPlans.aspx" />
+    <Content Include="Transaction\frmCustomerSearch.aspx" />
+    <Content Include="Transaction\frmFaultySTB_SWAP.aspx" />
+    <Content Include="Transaction\frmInvAmountMove.aspx" />
+    <Content Include="Transaction\frmInventoryManu.aspx" />
+    <Content Include="Transaction\frmNewSTBSP.aspx" />
+    <Content Include="Transaction\FrmOnlinepaymentMobRcpt.aspx" />
+    <Content Include="Transaction\frmSelfcare.aspx" />
+    <Content Include="Transaction\frmSTBForeClosureList_LCO.aspx" />
+    <Content Include="Transaction\FrmSTBForeClosureMst_LCO.aspx" />
+    <Content Include="Transaction\FrmWarehouseBulkProcess.aspx" />
+    <Content Include="Transaction\Home.aspx" />
+    <Content Include="Transaction\HomeCash.aspx" />
+    <Content Include="Transaction\HwayTransInventryOnlinePayment.aspx" />
+    <Content Include="Transaction\HwayTransLcoOnlinePayment.aspx" />
+    <Content Include="Transaction\HwayTransLCOSTBInventoryConformation.aspx" />
+    <Content Include="Transaction\OnlineReqform.aspx" />
+    <Content Include="Transaction\rcptPayment.aspx" />
+    <Content Include="Transaction\rcptPaymentReceiptInvoice.aspx" />
+    <Content Include="Transaction\rcptPaymentReceiptInvoicePIS.aspx" />
+    <Content Include="Transaction\ReportPrint.aspx" />
+    <Content Include="Transaction\rptLcoWiseNotification.aspx" />
+    <Content Include="Transaction\rptLeafletDetails.aspx" />
+    <Content Include="Transaction\Transactionprovi.aspx" />
+    <Content Include="Transaction\TransBalanceManagementPages.aspx" />
+    <Content Include="Transaction\TransBulkPages.aspx" />
+    <Content Include="Transaction\TransHwayAutoRenewCancel.aspx" />
+    <Content Include="Transaction\transhwaybilldetails.aspx" />
+    <Content Include="Transaction\TransHwayBulkActDct.aspx" />
+    <Content Include="Transaction\TransHwayBulkActDctScheduler.aspx" />
+    <Content Include="Transaction\TransHwayBulkActivation.aspx" />
+    <Content Include="Transaction\TransHwayBulkAutoRenewal.aspx" />
+    <Content Include="Transaction\TransHwayBulkChangePlan.aspx" />
+    <Content Include="Transaction\TransHwayBulkCustumerAddEcaf.aspx" />
+    <Content Include="Transaction\TransHwayBulkDiscount.aspx" />
+    <Content Include="Transaction\TransHwayBulkOperation.aspx" />
+    <Content Include="Transaction\TransHwaybulkRenewal.aspx" />
+    <Content Include="Transaction\TransHwayBulkRenewConf.aspx" />
+    <Content Include="Transaction\TransHwayInventryOnlinePayRes.aspx" />
+    <Content Include="Transaction\TransHwayLcoCashPaymentRev.aspx" />
+    <Content Include="Transaction\transhwaylcoinvoicedetails.aspx" />
+    <Content Include="Transaction\TransHwayLcoPayment.aspx" />
+    <Content Include="Transaction\TransHwayLcoPaymentRev.aspx" />
+    <Content Include="Transaction\TransHwayLcoReprintReceipt.aspx" />
+    <Content Include="Transaction\TransHwayOnlinePayResponse.aspx" />
+    <Content Include="Transaction\TransHwayOsdBmailFlagMap.aspx" />
+    <Content Include="Transaction\TransHwayUserCreditLimit.aspx" />
+    <Content Include="Transaction\TransHwayUserCreditLimitRev.aspx" />
+    <Content Include="Transaction\TransHwayUserCreditLimit_New.aspx" />
+    <Content Include="Transaction\TransNotificationPages.aspx" />
+    <Content Include="Transaction\TransOsdBmailNotification.aspx" />
+    <Content Include="Transaction\transRupassDistLimit.aspx" />
+    <None Include="CSS\TT0142M.TTF" />
+    <None Include="dsettblchildtv.xsc">
+      <DependentUpon>dsettblchildtv.xsd</DependentUpon>
+    </None>
+    <None Include="dsettblchildtv.xsd" />
+    <None Include="dsettblchildtv.xss">
+      <DependentUpon>dsettblchildtv.xsd</DependentUpon>
+    </None>
+    <None Include="GeneratedFiles\DemoExcel\BulkChange.xlsx" />
+    <None Include="GeneratedFiles\DemoExcel\BulkUpload.xlsx" />
+    <None Include="GeneratedFiles\DemoExcel\Bulk_ACT_DCT.xlsx" />
+    <None Include="GeneratedFiles\DemoExcel\Bulk_ACT_DCT_Scheduler.xlsx" />
+    <None Include="GeneratedFiles\DemoExcel\osd_or_bmail.xlsx" />
+    <None Include="GeneratedFiles\DemoExcel\sms.xlsx" />
+    <None Include="GeneratedFiles\DemoExcel\User_AC_Mapping.xlsx" />
+    <None Include="Leaflet\Artwork_Leaflet English_West.pdf" />
+    <None Include="LegelContent\Amendment_25.03.2015.pdf" />
+    <None Include="LegelContent\Cable TV Rules_1994.pdf" />
+    <None Include="LegelContent\Cable TV_Amendment Act_2011.pdf" />
+    <None Include="LegelContent\Consumer Complaint Redressal Regulation 2012.pdf" />
+    <None Include="LegelContent\Consumer Complaint Redressal_Main Regulation_14.05.2012.pdf" />
+    <None Include="LegelContent\Interconnection %28DAS%29 Regulations, 2012.pdf" />
+    <None Include="LegelContent\Interconnection %28DAS%29 Regulations, Feb 2014.pdf" />
+    <None Include="LegelContent\Interconnection %28DAS%29 Regulations, July 2014.pdf" />
+    <None Include="LegelContent\Interconnection Regulations %28Eighth ammendement%29, July 2014.pdf" />
+    <None Include="LegelContent\Interconnection Regulations %28Fifth ammendement%29, Feb 2014.pdf" />
+    <None Include="LegelContent\Main Regulation.pdf" />
+    <None Include="LegelContent\Tariff Order Addressable Systems July 2014.pdf" />
+    <None Include="LegelContent\Tariff Order January 2015.pdf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Transaction\Customer_Receipt.xsc">
+      <DependentUpon>Customer_Receipt.xsd</DependentUpon>
+    </None>
+    <None Include="Transaction\Customer_Receipt.xsd" />
+    <None Include="Transaction\Customer_Receipt.xss">
+      <DependentUpon>Customer_Receipt.xsd</DependentUpon>
+    </None>
+    <None Include="Web References\BulkUploadService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\BulkUploadService\Service1.disco" />
+    <Content Include="Transaction\transUserAccountMapping.aspx" />
+    <Content Include="Usercontrol\GSTDOC.ascx" />
+    <Content Include="Usercontrol\MIADOC.ascx" />
+    <Content Include="Usercontrol\MIADOC_NEW.ascx" />
+    <Content Include="Usercontrol\PopUp1.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web References\BulkUploadService\Service1.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClsGenerateExcel.cs" />
+    <Compile Include="dsettblchildtv.Designer.cs" />
+    <Compile Include="GenerateCaptcha.aspx.cs">
+      <DependentUpon>GenerateCaptcha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenerateCaptcha.aspx.designer.cs">
+      <DependentUpon>GenerateCaptcha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgotpass.aspx.cs">
+      <DependentUpon>forgotpass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forgotpass.aspx.designer.cs">
+      <DependentUpon>forgotpass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\Cls_Presentation_Helper.cs" />
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmAutoEcsLcoConfig.aspx.cs">
+      <DependentUpon>FrmAutoEcsLcoConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\FrmAutoEcsLcoConfig.aspx.designer.cs">
+      <DependentUpon>FrmAutoEcsLcoConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmDashboard.aspx.cs">
+      <DependentUpon>frmDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\frmDashboard.aspx.designer.cs">
+      <DependentUpon>frmDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmgstn.aspx.cs">
+      <DependentUpon>frmgstn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\frmgstn.aspx.designer.cs">
+      <DependentUpon>frmgstn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmHwayUserCreditLimit.aspx.cs">
+      <DependentUpon>FrmHwayUserCreditLimit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\FrmHwayUserCreditLimit.aspx.designer.cs">
+      <DependentUpon>FrmHwayUserCreditLimit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmLCODetailsUpdate.aspx.cs">
+      <DependentUpon>frmLCODetailsUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\frmLCODetailsUpdate.aspx.designer.cs">
+      <DependentUpon>frmLCODetailsUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmLCOPreMSOUserDefine.aspx.cs">
+      <DependentUpon>frmLCOPreMSOUserDefine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\frmLCOPreMSOUserDefine.aspx.designer.cs">
+      <DependentUpon>frmLCOPreMSOUserDefine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmLCOPreUserDefine.aspx.cs">
+      <DependentUpon>frmLCOPreUserDefine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\frmLCOPreUserDefine.aspx.designer.cs">
+      <DependentUpon>frmLCOPreUserDefine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmLCORegistration.aspx.cs">
+      <DependentUpon>frmLCORegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\frmLCORegistration.aspx.designer.cs">
+      <DependentUpon>frmLCORegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmMessenger.aspx.cs">
+      <DependentUpon>frmMessenger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\frmMessenger.aspx.designer.cs">
+      <DependentUpon>frmMessenger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmOtherLcoDetails.aspx.cs">
+      <DependentUpon>frmOtherLcoDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\frmOtherLcoDetails.aspx.designer.cs">
+      <DependentUpon>frmOtherLcoDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\mstComplaintRegistration.aspx.cs">
+      <DependentUpon>mstComplaintRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\mstComplaintRegistration.aspx.designer.cs">
+      <DependentUpon>mstComplaintRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\mstecafcustomerdetails.aspx.cs">
+      <DependentUpon>mstecafcustomerdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\mstecafcustomerdetails.aspx.designer.cs">
+      <DependentUpon>mstecafcustomerdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\mstecafstbtransadminapp.aspx.cs">
+      <DependentUpon>mstecafstbtransadminapp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\mstecafstbtransadminapp.aspx.designer.cs">
+      <DependentUpon>mstecafstbtransadminapp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\mstecafstbtransfer.aspx.cs">
+      <DependentUpon>mstecafstbtransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\mstecafstbtransfer.aspx.designer.cs">
+      <DependentUpon>mstecafstbtransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\mstecafstbtranslcoapp.aspx.cs">
+      <DependentUpon>mstecafstbtranslcoapp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\mstecafstbtranslcoapp.aspx.designer.cs">
+      <DependentUpon>mstecafstbtranslcoapp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\mstecafstbtranslcoapplist.aspx.cs">
+      <DependentUpon>mstecafstbtranslcoapplist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\mstecafstbtranslcoapplist.aspx.designer.cs">
+      <DependentUpon>mstecafstbtranslcoapplist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\mstecafstbtranslcoconfig.aspx.cs">
+      <DependentUpon>mstecafstbtranslcoconfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\mstecafstbtranslcoconfig.aspx.designer.cs">
+      <DependentUpon>mstecafstbtranslcoconfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\mstHwayLCOMsgBroadcast.aspx.cs">
+      <DependentUpon>mstHwayLCOMsgBroadcast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\mstHwayLCOMsgBroadcast.aspx.designer.cs">
+      <DependentUpon>mstHwayLCOMsgBroadcast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\mstHwayMsgBrodcast.aspx.cs">
+      <DependentUpon>mstHwayMsgBrodcast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\mstHwayMsgBrodcast.aspx.designer.cs">
+      <DependentUpon>mstHwayMsgBrodcast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\mstLCOAdminPages.aspx.cs">
+      <DependentUpon>mstLCOAdminPages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\mstLCOAdminPages.aspx.designer.cs">
+      <DependentUpon>mstLCOAdminPages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\TransAssignBtnRights.aspx.cs">
+      <DependentUpon>TransAssignBtnRights.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\TransAssignBtnRights.aspx.designer.cs">
+      <DependentUpon>TransAssignBtnRights.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NoAccessRights.aspx.cs">
+      <DependentUpon>NoAccessRights.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NoAccessRights.aspx.designer.cs">
+      <DependentUpon>NoAccessRights.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RandStrGenerator.asmx.cs">
+      <DependentUpon>RandStrGenerator.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrystalReportECAFpdf1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportECAFpdf.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\EcafPages.aspx.cs">
+      <DependentUpon>EcafPages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\EcafPages.aspx.designer.cs">
+      <DependentUpon>EcafPages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmMeddleBulkTransaction.aspx.cs">
+      <DependentUpon>frmMeddleBulkTransaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\frmMeddleBulkTransaction.aspx.designer.cs">
+      <DependentUpon>frmMeddleBulkTransaction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmMiddlePageBulkTransaction.aspx.cs">
+      <DependentUpon>frmMiddlePageBulkTransaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\frmMiddlePageBulkTransaction.aspx.designer.cs">
+      <DependentUpon>frmMiddlePageBulkTransaction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\New_CrystalReportECAFpdf.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rcptPaymentReceiptInvoice.aspx.cs">
+      <DependentUpon>rcptPaymentReceiptInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rcptPaymentReceiptInvoice.aspx.designer.cs">
+      <DependentUpon>rcptPaymentReceiptInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTopup.aspx.cs">
+      <DependentUpon>rptAddPlanTopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTopup.aspx.designer.cs">
+      <DependentUpon>rptAddPlanTopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTransDET.aspx.cs">
+      <DependentUpon>rptAddPlanTransDET.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTransDET.aspx.designer.cs">
+      <DependentUpon>rptAddPlanTransDET.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTransDET_JV.aspx.cs">
+      <DependentUpon>rptAddPlanTransDET_JV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTransDET_JV.aspx.designer.cs">
+      <DependentUpon>rptAddPlanTransDET_JV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTransLCO.aspx.cs">
+      <DependentUpon>rptAddPlanTransLCO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTransLCO.aspx.designer.cs">
+      <DependentUpon>rptAddPlanTransLCO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTransLCO_JV.aspx.cs">
+      <DependentUpon>rptAddPlanTransLCO_JV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTransLCO_JV.aspx.designer.cs">
+      <DependentUpon>rptAddPlanTransLCO_JV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTransMSO.aspx.cs">
+      <DependentUpon>rptAddPlanTransMSO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTransMSO.aspx.designer.cs">
+      <DependentUpon>rptAddPlanTransMSO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTransMSO_JV.aspx.cs">
+      <DependentUpon>rptAddPlanTransMSO_JV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTransMSO_JV.aspx.designer.cs">
+      <DependentUpon>rptAddPlanTransMSO_JV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTransUSER.aspx.cs">
+      <DependentUpon>rptAddPlanTransUSER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTransUSER.aspx.designer.cs">
+      <DependentUpon>rptAddPlanTransUSER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTransUSER_JV.aspx.cs">
+      <DependentUpon>rptAddPlanTransUSER_JV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAddPlanTransUSER_JV.aspx.designer.cs">
+      <DependentUpon>rptAddPlanTransUSER_JV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBtnUserRights.aspx.cs">
+      <DependentUpon>rptBtnUserRights.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBtnUserRights.aspx.designer.cs">
+      <DependentUpon>rptBtnUserRights.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptbulkACD_DEACTSch.aspx.cs">
+      <DependentUpon>rptbulkACD_DEACTSch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptbulkACD_DEACTSch.aspx.designer.cs">
+      <DependentUpon>rptbulkACD_DEACTSch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBulkACTDCTFileProcess.aspx.cs">
+      <DependentUpon>rptBulkACTDCTFileProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBulkACTDCTFileProcess.aspx.designer.cs">
+      <DependentUpon>rptBulkACTDCTFileProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBulkActFileProcess.aspx.cs">
+      <DependentUpon>rptBulkActFileProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBulkActFileProcess.aspx.designer.cs">
+      <DependentUpon>rptBulkActFileProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBulkActFileProcessRemove.aspx.cs">
+      <DependentUpon>rptBulkActFileProcessRemove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBulkActFileProcessRemove.aspx.designer.cs">
+      <DependentUpon>rptBulkActFileProcessRemove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBulkActTransactionProc.aspx.cs">
+      <DependentUpon>rptBulkActTransactionProc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBulkActTransactionProc.aspx.designer.cs">
+      <DependentUpon>rptBulkActTransactionProc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptbulkchangetransproc.aspx.cs">
+      <DependentUpon>rptbulkchangetransproc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptbulkchangetransproc.aspx.designer.cs">
+      <DependentUpon>rptbulkchangetransproc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBulkDiscountDet.aspx.cs">
+      <DependentUpon>rptBulkDiscountDet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBulkDiscountDet.aspx.designer.cs">
+      <DependentUpon>rptBulkDiscountDet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBulkEcafReport.aspx.cs">
+      <DependentUpon>rptBulkEcafReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBulkEcafReport.aspx.designer.cs">
+      <DependentUpon>rptBulkEcafReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBulkFileProcess.aspx.cs">
+      <DependentUpon>rptBulkFileProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBulkFileProcess.aspx.designer.cs">
+      <DependentUpon>rptBulkFileProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBulkTransactionProc.aspx.cs">
+      <DependentUpon>rptBulkTransactionProc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBulkTransactionProc.aspx.designer.cs">
+      <DependentUpon>rptBulkTransactionProc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptBulkUpload.aspx.cs">
+      <DependentUpon>rptBulkUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBulkUpload.aspx.designer.cs">
+      <DependentUpon>rptBulkUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptChildTVDiscountReport.aspx.cs">
+      <DependentUpon>rptChildTVDiscountReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptChildTVDiscountReport.aspx.designer.cs">
+      <DependentUpon>rptChildTVDiscountReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCompDetails.aspx.cs">
+      <DependentUpon>rptCompDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCompDetails.aspx.designer.cs">
+      <DependentUpon>rptCompDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptcustcandetails.aspx.cs">
+      <DependentUpon>rptcustcandetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptcustcandetails.aspx.designer.cs">
+      <DependentUpon>rptcustcandetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RptCustEcsDetails.aspx.cs">
+      <DependentUpon>RptCustEcsDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\RptCustEcsDetails.aspx.designer.cs">
+      <DependentUpon>RptCustEcsDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCustomerModify.aspx.cs">
+      <DependentUpon>rptCustomerModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCustomerModify.aspx.designer.cs">
+      <DependentUpon>rptCustomerModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptDownloadAgreement.aspx.cs">
+      <DependentUpon>rptDownloadAgreement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptDownloadAgreement.aspx.designer.cs">
+      <DependentUpon>rptDownloadAgreement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptEcafCustDetails.aspx.cs">
+      <DependentUpon>rptEcafCustDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptEcafCustDetails.aspx.designer.cs">
+      <DependentUpon>rptEcafCustDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptExpired.aspx.cs">
+      <DependentUpon>rptExpired.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptExpired.aspx.designer.cs">
+      <DependentUpon>rptExpired.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptExpiry.aspx.cs">
+      <DependentUpon>rptExpiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptExpiry.aspx.designer.cs">
+      <DependentUpon>rptExpiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptExpiry_new.aspx.cs">
+      <DependentUpon>rptExpiry_new.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptExpiry_new.aspx.designer.cs">
+      <DependentUpon>rptExpiry_new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptHwaylcolegelDet.aspx.cs">
+      <DependentUpon>rptHwaylcolegelDet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptHwaylcolegelDet.aspx.designer.cs">
+      <DependentUpon>rptHwaylcolegelDet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptInvBulkwhrehousevalidation.aspx.cs">
+      <DependentUpon>rptInvBulkwhrehousevalidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptInvBulkwhrehousevalidation.aspx.designer.cs">
+      <DependentUpon>rptInvBulkwhrehousevalidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptInventorySearch.aspx.cs">
+      <DependentUpon>rptInventorySearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptInventorySearch.aspx.designer.cs">
+      <DependentUpon>rptInventorySearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptINVPrePartyLedger.aspx.cs">
+      <DependentUpon>rptINVPrePartyLedger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptINVPrePartyLedger.aspx.designer.cs">
+      <DependentUpon>rptINVPrePartyLedger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptINVPrePartyLedgerDET.aspx.cs">
+      <DependentUpon>rptINVPrePartyLedgerDET.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptINVPrePartyLedgerDET.aspx.designer.cs">
+      <DependentUpon>rptINVPrePartyLedgerDET.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptInvunusedSTBVC.aspx.cs">
+      <DependentUpon>rptInvunusedSTBVC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptInvunusedSTBVC.aspx.designer.cs">
+      <DependentUpon>rptInvunusedSTBVC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptLastFive.aspx.cs">
+      <DependentUpon>rptLastFive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptLastFive.aspx.designer.cs">
+      <DependentUpon>rptLastFive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptLCOAllDetails.aspx.cs">
+      <DependentUpon>rptLCOAllDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptLCOAllDetails.aspx.designer.cs">
+      <DependentUpon>rptLCOAllDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptLCOAllDetailsNew.aspx.cs">
+      <DependentUpon>rptLCOAllDetailsNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptLCOAllDetailsNew.aspx.designer.cs">
+      <DependentUpon>rptLCOAllDetailsNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptLCOPaymentRevoke.aspx.cs">
+      <DependentUpon>rptLCOPaymentRevoke.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptLCOPaymentRevoke.aspx.designer.cs">
+      <DependentUpon>rptLCOPaymentRevoke.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptLCOPlanShare.aspx.cs">
+      <DependentUpon>rptLCOPlanShare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptLCOPlanShare.aspx.designer.cs">
+      <DependentUpon>rptLCOPlanShare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptLcowiseAwailBalDet.aspx.cs">
+      <DependentUpon>rptLcowiseAwailBalDet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptLcowiseAwailBalDet.aspx.designer.cs">
+      <DependentUpon>rptLcowiseAwailBalDet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptLcoWiseNotification.aspx.cs">
+      <DependentUpon>rptLcoWiseNotification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptLcoWiseNotification.aspx.designer.cs">
+      <DependentUpon>rptLcoWiseNotification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptLcowiseUserdetails.aspx.cs">
+      <DependentUpon>rptLcowiseUserdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptLcowiseUserdetails.aspx.designer.cs">
+      <DependentUpon>rptLcowiseUserdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptNew_Activation.aspx.cs">
+      <DependentUpon>rptNew_Activation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptNew_Activation.aspx.designer.cs">
+      <DependentUpon>rptNew_Activation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptnoncasreport.aspx.cs">
+      <DependentUpon>rptnoncasreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptnoncasreport.aspx.designer.cs">
+      <DependentUpon>rptnoncasreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptNotificationSent.aspx.cs">
+      <DependentUpon>rptNotificationSent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptNotificationSent.aspx.designer.cs">
+      <DependentUpon>rptNotificationSent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptObrmCustMast.aspx.cs">
+      <DependentUpon>rptObrmCustMast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptObrmCustMast.aspx.designer.cs">
+      <DependentUpon>rptObrmCustMast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptpartyledopenbal.aspx.cs">
+      <DependentUpon>rptpartyledopenbal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptpartyledopenbal.aspx.designer.cs">
+      <DependentUpon>rptpartyledopenbal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptPlanDetails.aspx.cs">
+      <DependentUpon>rptPlanDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptPlanDetails.aspx.designer.cs">
+      <DependentUpon>rptPlanDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptPreCustLastTransDet.aspx.cs">
+      <DependentUpon>rptPreCustLastTransDet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptPreCustLastTransDet.aspx.designer.cs">
+      <DependentUpon>rptPreCustLastTransDet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptPrePartyLedgerDET.aspx.cs">
+      <DependentUpon>rptPrePartyLedgerDET.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptPrePartyLedgerDET.aspx.designer.cs">
+      <DependentUpon>rptPrePartyLedgerDET.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptPrePartyLedgerLCO.aspx.cs">
+      <DependentUpon>rptPrePartyLedgerLCO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptPrePartyLedgerLCO.aspx.designer.cs">
+      <DependentUpon>rptPrePartyLedgerLCO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSelfcareDebitReport.aspx.cs">
+      <DependentUpon>rptSelfcareDebitReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSelfcareDebitReport.aspx.designer.cs">
+      <DependentUpon>rptSelfcareDebitReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSelfCareTransaction.aspx.cs">
+      <DependentUpon>rptSelfCareTransaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSelfCareTransaction.aspx.designer.cs">
+      <DependentUpon>rptSelfCareTransaction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptserviceActDact.aspx.cs">
+      <DependentUpon>rptserviceActDact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptserviceActDact.aspx.designer.cs">
+      <DependentUpon>rptserviceActDact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSmsDelivery.aspx.cs">
+      <DependentUpon>rptSmsDelivery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSmsDelivery.aspx.designer.cs">
+      <DependentUpon>rptSmsDelivery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptsplcoprecolldetails.aspx.cs">
+      <DependentUpon>rptsplcoprecolldetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptsplcoprecolldetails.aspx.designer.cs">
+      <DependentUpon>rptsplcoprecolldetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RptSTBLCOTransRejected.aspx.cs">
+      <DependentUpon>RptSTBLCOTransRejected.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\RptSTBLCOTransRejected.aspx.designer.cs">
+      <DependentUpon>RptSTBLCOTransRejected.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSTBSummary.aspx.cs">
+      <DependentUpon>rptSTBSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSTBSummary.aspx.designer.cs">
+      <DependentUpon>rptSTBSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RptSTBTransfer.aspx.cs">
+      <DependentUpon>RptSTBTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\RptSTBTransfer.aspx.designer.cs">
+      <DependentUpon>RptSTBTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSWAP_FaultyDetails.aspx.cs">
+      <DependentUpon>rptSWAP_FaultyDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSWAP_FaultyDetails.aspx.designer.cs">
+      <DependentUpon>rptSWAP_FaultyDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptUserAcc_Mapping.aspx.cs">
+      <DependentUpon>rptUserAcc_Mapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptUserAcc_Mapping.aspx.designer.cs">
+      <DependentUpon>rptUserAcc_Mapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptUserdetailsLcowiseDet.aspx.cs">
+      <DependentUpon>rptUserdetailsLcowiseDet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptUserdetailsLcowiseDet.aspx.designer.cs">
+      <DependentUpon>rptUserdetailsLcowiseDet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptUserdetailsMSOwiseDet.aspx.cs">
+      <DependentUpon>rptUserdetailsMSOwiseDet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptUserdetailsMSOwiseDet.aspx.designer.cs">
+      <DependentUpon>rptUserdetailsMSOwiseDet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ViewPdf.aspx.cs">
+      <DependentUpon>ViewPdf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ViewPdf.aspx.designer.cs">
+      <DependentUpon>ViewPdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityValidation.cs" />
+    <Compile Include="Transaction\ankit.aspx.cs">
+      <DependentUpon>ankit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\ankit.aspx.designer.cs">
+      <DependentUpon>ankit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\CustomerSearchTest.aspx.cs">
+      <DependentUpon>CustomerSearchTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\CustomerSearchTest.aspx.designer.cs">
+      <DependentUpon>CustomerSearchTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Customer_receipt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Customer_receipt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmAssignPlan.aspx.cs">
+      <DependentUpon>frmAssignPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmAssignPlan.aspx.designer.cs">
+      <DependentUpon>frmAssignPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmCancelPlans.aspx.cs">
+      <DependentUpon>frmCancelPlans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmCancelPlans.aspx.designer.cs">
+      <DependentUpon>frmCancelPlans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmCustomerSearch.aspx.cs">
+      <DependentUpon>frmCustomerSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmCustomerSearch.aspx.designer.cs">
+      <DependentUpon>frmCustomerSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmFaultySTB_SWAP.aspx.cs">
+      <DependentUpon>frmFaultySTB_SWAP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmFaultySTB_SWAP.aspx.designer.cs">
+      <DependentUpon>frmFaultySTB_SWAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmInvAmountMove.aspx.cs">
+      <DependentUpon>frmInvAmountMove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmInvAmountMove.aspx.designer.cs">
+      <DependentUpon>frmInvAmountMove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmInventoryManu.aspx.cs">
+      <DependentUpon>frmInventoryManu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmInventoryManu.aspx.designer.cs">
+      <DependentUpon>frmInventoryManu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmNewSTBSP.aspx.cs">
+      <DependentUpon>frmNewSTBSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmNewSTBSP.aspx.designer.cs">
+      <DependentUpon>frmNewSTBSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\FrmOnlinepaymentMobRcpt.aspx.cs">
+      <DependentUpon>FrmOnlinepaymentMobRcpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\FrmOnlinepaymentMobRcpt.aspx.designer.cs">
+      <DependentUpon>FrmOnlinepaymentMobRcpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmSelfcare.aspx.cs">
+      <DependentUpon>frmSelfcare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmSelfcare.aspx.designer.cs">
+      <DependentUpon>frmSelfcare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmSTBForeClosureList_LCO.aspx.cs">
+      <DependentUpon>frmSTBForeClosureList_LCO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmSTBForeClosureList_LCO.aspx.designer.cs">
+      <DependentUpon>frmSTBForeClosureList_LCO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\FrmSTBForeClosureMst_LCO.aspx.cs">
+      <DependentUpon>FrmSTBForeClosureMst_LCO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\FrmSTBForeClosureMst_LCO.aspx.designer.cs">
+      <DependentUpon>FrmSTBForeClosureMst_LCO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\FrmWarehouseBulkProcess.aspx.cs">
+      <DependentUpon>FrmWarehouseBulkProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\FrmWarehouseBulkProcess.aspx.designer.cs">
+      <DependentUpon>FrmWarehouseBulkProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\HomeCash.aspx.cs">
+      <DependentUpon>HomeCash.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\HomeCash.aspx.designer.cs">
+      <DependentUpon>HomeCash.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\HwayTransInventryOnlinePayment.aspx.cs">
+      <DependentUpon>HwayTransInventryOnlinePayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\HwayTransInventryOnlinePayment.aspx.designer.cs">
+      <DependentUpon>HwayTransInventryOnlinePayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\HwayTransLcoOnlinePayment.aspx.cs">
+      <DependentUpon>HwayTransLcoOnlinePayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\HwayTransLcoOnlinePayment.aspx.designer.cs">
+      <DependentUpon>HwayTransLcoOnlinePayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\HwayTransLCOSTBInventoryConformation.aspx.cs">
+      <DependentUpon>HwayTransLCOSTBInventoryConformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\HwayTransLCOSTBInventoryConformation.aspx.designer.cs">
+      <DependentUpon>HwayTransLCOSTBInventoryConformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\OBJECT.cs" />
+    <Compile Include="Transaction\OnlineReqform.aspx.cs">
+      <DependentUpon>OnlineReqform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\OnlineReqform.aspx.designer.cs">
+      <DependentUpon>OnlineReqform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\online_payment_pdf.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>online_payment_pdf.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Transaction\rcptPayment.aspx.cs">
+      <DependentUpon>rcptPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\rcptPayment.aspx.designer.cs">
+      <DependentUpon>rcptPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\rcptPaymentReceiptInvoice.aspx.cs">
+      <DependentUpon>rcptPaymentReceiptInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\rcptPaymentReceiptInvoice.aspx.designer.cs">
+      <DependentUpon>rcptPaymentReceiptInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\rcptPaymentReceiptInvoicePIS.aspx.cs">
+      <DependentUpon>rcptPaymentReceiptInvoicePIS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\rcptPaymentReceiptInvoicePIS.aspx.designer.cs">
+      <DependentUpon>rcptPaymentReceiptInvoicePIS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Recieptgeneral.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Recieptgeneral.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Transaction\ReportPrint.aspx.cs">
+      <DependentUpon>ReportPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\ReportPrint.aspx.designer.cs">
+      <DependentUpon>ReportPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\rptLeafletDetails.aspx.cs">
+      <DependentUpon>rptLeafletDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\rptLeafletDetails.aspx.designer.cs">
+      <DependentUpon>rptLeafletDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Transactionprovi.aspx.cs">
+      <DependentUpon>Transactionprovi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Transactionprovi.aspx.designer.cs">
+      <DependentUpon>Transactionprovi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransBalanceManagementPages.aspx.cs">
+      <DependentUpon>TransBalanceManagementPages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransBalanceManagementPages.aspx.designer.cs">
+      <DependentUpon>TransBalanceManagementPages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransBulkPages.aspx.cs">
+      <DependentUpon>TransBulkPages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransBulkPages.aspx.designer.cs">
+      <DependentUpon>TransBulkPages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayAutoRenewCancel.aspx.cs">
+      <DependentUpon>TransHwayAutoRenewCancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayAutoRenewCancel.aspx.designer.cs">
+      <DependentUpon>TransHwayAutoRenewCancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\transhwaybilldetails.aspx.cs">
+      <DependentUpon>transhwaybilldetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\transhwaybilldetails.aspx.designer.cs">
+      <DependentUpon>transhwaybilldetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkActDct.aspx.cs">
+      <DependentUpon>TransHwayBulkActDct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkActDct.aspx.designer.cs">
+      <DependentUpon>TransHwayBulkActDct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkActDctScheduler.aspx.cs">
+      <DependentUpon>TransHwayBulkActDctScheduler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkActDctScheduler.aspx.designer.cs">
+      <DependentUpon>TransHwayBulkActDctScheduler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkActivation.aspx.cs">
+      <DependentUpon>TransHwayBulkActivation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkActivation.aspx.designer.cs">
+      <DependentUpon>TransHwayBulkActivation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkAutoRenewal.aspx.cs">
+      <DependentUpon>TransHwayBulkAutoRenewal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkAutoRenewal.aspx.designer.cs">
+      <DependentUpon>TransHwayBulkAutoRenewal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkChangePlan.aspx.cs">
+      <DependentUpon>TransHwayBulkChangePlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkChangePlan.aspx.designer.cs">
+      <DependentUpon>TransHwayBulkChangePlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkCustumerAddEcaf.aspx.cs">
+      <DependentUpon>TransHwayBulkCustumerAddEcaf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkCustumerAddEcaf.aspx.designer.cs">
+      <DependentUpon>TransHwayBulkCustumerAddEcaf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkDiscount.aspx.cs">
+      <DependentUpon>TransHwayBulkDiscount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkDiscount.aspx.designer.cs">
+      <DependentUpon>TransHwayBulkDiscount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkOperation.aspx.cs">
+      <DependentUpon>TransHwayBulkOperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkOperation.aspx.designer.cs">
+      <DependentUpon>TransHwayBulkOperation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwaybulkRenewal.aspx.cs">
+      <DependentUpon>TransHwaybulkRenewal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwaybulkRenewal.aspx.designer.cs">
+      <DependentUpon>TransHwaybulkRenewal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkRenewConf.aspx.cs">
+      <DependentUpon>TransHwayBulkRenewConf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayBulkRenewConf.aspx.designer.cs">
+      <DependentUpon>TransHwayBulkRenewConf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayInventryOnlinePayRes.aspx.cs">
+      <DependentUpon>TransHwayInventryOnlinePayRes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayInventryOnlinePayRes.aspx.designer.cs">
+      <DependentUpon>TransHwayInventryOnlinePayRes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayLcoCashPaymentRev.aspx.cs">
+      <DependentUpon>TransHwayLcoCashPaymentRev.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayLcoCashPaymentRev.aspx.designer.cs">
+      <DependentUpon>TransHwayLcoCashPaymentRev.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\transhwaylcoinvoicedetails.aspx.cs">
+      <DependentUpon>transhwaylcoinvoicedetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\transhwaylcoinvoicedetails.aspx.designer.cs">
+      <DependentUpon>transhwaylcoinvoicedetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayLcoPayment.aspx.cs">
+      <DependentUpon>TransHwayLcoPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayLcoPayment.aspx.designer.cs">
+      <DependentUpon>TransHwayLcoPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayLcoPaymentRev.aspx.cs">
+      <DependentUpon>TransHwayLcoPaymentRev.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayLcoPaymentRev.aspx.designer.cs">
+      <DependentUpon>TransHwayLcoPaymentRev.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayLcoReprintReceipt.aspx.cs">
+      <DependentUpon>TransHwayLcoReprintReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayLcoReprintReceipt.aspx.designer.cs">
+      <DependentUpon>TransHwayLcoReprintReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayOnlinePayResponse.aspx.cs">
+      <DependentUpon>TransHwayOnlinePayResponse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayOnlinePayResponse.aspx.designer.cs">
+      <DependentUpon>TransHwayOnlinePayResponse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayOsdBmailFlagMap.aspx.cs">
+      <DependentUpon>TransHwayOsdBmailFlagMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayOsdBmailFlagMap.aspx.designer.cs">
+      <DependentUpon>TransHwayOsdBmailFlagMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayUserCreditLimit.aspx.cs">
+      <DependentUpon>TransHwayUserCreditLimit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayUserCreditLimit.aspx.designer.cs">
+      <DependentUpon>TransHwayUserCreditLimit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayUserCreditLimitRev.aspx.cs">
+      <DependentUpon>TransHwayUserCreditLimitRev.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayUserCreditLimitRev.aspx.designer.cs">
+      <DependentUpon>TransHwayUserCreditLimitRev.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransHwayUserCreditLimit_New.aspx.cs">
+      <DependentUpon>TransHwayUserCreditLimit_New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransHwayUserCreditLimit_New.aspx.designer.cs">
+      <DependentUpon>TransHwayUserCreditLimit_New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransNotificationPages.aspx.cs">
+      <DependentUpon>TransNotificationPages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransNotificationPages.aspx.designer.cs">
+      <DependentUpon>TransNotificationPages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\TransOsdBmailNotification.aspx.cs">
+      <DependentUpon>TransOsdBmailNotification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\TransOsdBmailNotification.aspx.designer.cs">
+      <DependentUpon>TransOsdBmailNotification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\transRupassDistLimit.aspx.cs">
+      <DependentUpon>transRupassDistLimit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\transRupassDistLimit.aspx.designer.cs">
+      <DependentUpon>transRupassDistLimit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\transUserAccountMapping.aspx.cs">
+      <DependentUpon>transUserAccountMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\transUserAccountMapping.aspx.designer.cs">
+      <DependentUpon>transUserAccountMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrol\GSTDOC.ascx.cs">
+      <DependentUpon>GSTDOC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrol\GSTDOC.ascx.designer.cs">
+      <DependentUpon>GSTDOC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrol\MIADOC.ascx.cs">
+      <DependentUpon>MIADOC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrol\MIADOC.ascx.designer.cs">
+      <DependentUpon>MIADOC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrol\MIADOC_NEW.ascx.cs">
+      <DependentUpon>MIADOC_NEW.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrol\MIADOC_NEW.ascx.designer.cs">
+      <DependentUpon>MIADOC_NEW.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrol\PopUp1.ascx.cs">
+      <DependentUpon>PopUp1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrol\PopUp1.ascx.designer.cs">
+      <DependentUpon>PopUp1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\BulkUploadService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PrjUpassBLL\PrjUpassBLL.csproj">
+      <Project>{FC6F3E76-0FF2-4887-9E44-3602400BD760}</Project>
+      <Name>PrjUpassBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PrjUpassDAL\PrjUpassDAL.csproj">
+      <Project>{4FBAE1E5-394F-427C-BC3B-1BCFF51D1018}</Project>
+      <Name>PrjUpassDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GeneratedFiles\XLS\" />
+    <Folder Include="ImageGarbage\" />
+    <Folder Include="MyExcelFile\" />
+    <Folder Include="yesbank\MobImages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\CrystalReportECAFpdf.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportECAFpdf1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\New_CrystalReportECAFpdf.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>New_CrystalReportECAFpdf1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\Customer_receipt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Customer_receipt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\online_payment_pdf.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>online_payment_pdf.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\Recieptgeneral.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Recieptgeneral.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost/TestHathOBRMService/">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\BulkUploadService\</RelPath>
+      <UpdateFromURL>http://localhost/TestHathOBRMService/</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>PrjUpassPl_BulkUploadService_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2388</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/PrjUpassPl</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

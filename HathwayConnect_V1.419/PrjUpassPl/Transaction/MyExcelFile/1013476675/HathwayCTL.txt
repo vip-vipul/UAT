@@ -1,0 +1,7 @@
+LOAD DATA
+INFILE 'E:\Ascentech\Pawan\Prod project version wise\HathwayConnect\UAT\HathwayConnect_V1.34\PrjUpassPl\Transaction\MyExcelFile\1013476675\Warehousedata1013476675_15032018041051.txt'
+APPEND INTO  TABLE aoup_lcopre_pis_invent_raw 
+
+FIELDS TERMINATED BY "	"
+TRAILING NULLCOLS
+(num_inventval_transid,var_inventval_upload_id  constant "1013476675_15-Mar-2018_04:10:51_1417",var_inventval_orderno,var_inventval_lcocode,var_inventval_deviceid,var_inventval_boxtype,var_inventval_type,var_inventval_model,var_inventval_manufacturer,var_inventval_company,var_inventval_city,var_inventval_state,num_inventval_scheameid,var_inventval_insby,VAR_INVENTVAL_STATUS,NUM_INVENTVAL_STBID,dat_inventval_insdate constant "15-Mar-2018 04:10:51",var_inventval_apistatus,var_inventval_apismsg,dat_inventval_valdate,VAR_INVENTVAL_VALTYPE constant "N",VAR_INVENTVAL_TRANSTYPE constant "SPSN",VAR_INVENTVAL_IP constant "127.0.0.1",VAR_INVENTVAL_REMARK constant "sd")
