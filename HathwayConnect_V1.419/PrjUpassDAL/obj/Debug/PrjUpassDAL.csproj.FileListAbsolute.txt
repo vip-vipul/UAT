@@ -1033,6 +1033,6 @@ C:\Users\admin\Documents\IPMsg\AutoSave\UAT\HathwayConnect_V1.419\PrjUpassDAL\ob
 C:\Users\admin\Documents\IPMsg\AutoSave\UAT\HathwayConnect_V1.419\PrjUpassDAL\obj\Debug\PrjUpassDAL.pdb
 D:\projects\UAT\HathwayConnect_V1.419\PrjUpassDAL\bin\Debug\PrjUpassDAL.dll
 D:\projects\UAT\HathwayConnect_V1.419\PrjUpassDAL\bin\Debug\PrjUpassDAL.pdb
+D:\projects\UAT\HathwayConnect_V1.419\PrjUpassDAL\obj\Debug\PrjUpassDAL.csprojResolveAssemblyReference.cache
 D:\projects\UAT\HathwayConnect_V1.419\PrjUpassDAL\obj\Debug\PrjUpassDAL.dll
 D:\projects\UAT\HathwayConnect_V1.419\PrjUpassDAL\obj\Debug\PrjUpassDAL.pdb
-D:\projects\UAT\HathwayConnect_V1.419\PrjUpassDAL\obj\Debug\PrjUpassDAL.csprojResolveAssemblyReference.cache

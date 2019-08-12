@@ -22,11 +22,6 @@ namespace PrjUpassPl.Transaction
             Master.PageHeading = "Home";
             if (Session["username"] != null && Session["RPAuthToken"] != null && Request.Cookies["AuthToken"] != null)
             {
-                foreach (var item in Request.Cookies.AllKeys)
-                {
-                    Request.Cookies[item].Secure = true;
-                    Request.Cookies[item].HttpOnly = true;
-                }
                 if (!Session["RPAuthToken"].ToString().Equals(Request.Cookies["AuthToken"].Value))
                 {
                     Session.Abandon();
